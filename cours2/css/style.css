@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    height: 150px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(65,213,175,1) 25%, rgba(40,238,31,1) 50%, rgba(68,207,155,1) 75%, rgba(17,77,255,1) 100%);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    
+}
+.title {
+    display: table-cell;
+    width: 100vw;
+    height: 150px;
+    vertical-align: middle;
+}
+header h1 {
+    color: #030303;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.5em;
+}
+.contentBox {
+    margin-top: 20px;
+    width: 100%;
+}
+.contentBox h2, .contentBox p{
+    margin-left: 20px;
+}
+.contentBox h3{
+    margin-left: 50px;
+}
+.container {
+    background: radial-gradient(circle, rgba(236,238,31,1) 0%, rgba(255,255,255,1) 25%, rgba(251,158,63,1) 53%, rgba(210,94,94,1) 78%, rgba(32,4,4,1) 100%);
+    height: 100px;
+    width: 250px;
+    border: solid 1px black;
+    margin: auto;
+    color: #030303;
+}
+.box {
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background: rgb(69, 141, 255);
+    border: solid 1px rgb(83, 0, 248);
+}
+
+.ex1 {
+    display: flex;
+}
+.ex2 {
+    display: flex;
+    align-items: center;
+}
+.ex2a {
+    display: flex;
+    align-items: flex-start;
+}
+.ex2b {
+    display: flex;
+    align-items: flex-end;
+}
+.ex3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ex3a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.ex3b {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.ex3c {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.ex3d {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.ex3e {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.ex3f {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.ex3g {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+.ex3h {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.ex3i {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ex3j {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.ex3k {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.ex3l {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.ex3m {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.ex3n {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.ex3o {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.ex3p {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.ex3q {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+.ex4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.ex4a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+.ex4b {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.ex4c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+.exercice {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+}
