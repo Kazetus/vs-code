@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+/* classes */
+.bot {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0 1em 0;
+}
+.toolbar {
+    width: 100%;
+    border-color: rgba(0,0,0,0.2);
+    border-radius: 0.5em;
+    margin: 0.5em 0;
+    padding: 0.5em;
+
+}
+.field {
+    padding: 1em;
+    border-color: rgba(0,0,0,0.1);
+}
+.mid {
+    text-align: center;    
+}
+/* Balises */
+fieldset {
+    margin: 2em 1em;
+    padding: 1em;
+    font-size: 1.6rem;
+    border-color: rgba(0,0,0,0.1);
+    border-radius: 0.5em;
+}
+legend {
+    margin: 0.3em;
+}
+section {
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 0.5em;
+    margin: 1em;
+    padding: 1em;
+}
+p {
+    padding: 1em 0;
+}
+article {
+    background-color: #eee
+}
+input {
+    padding: 0 1em;
+    font-size: 1.6rem;
+    color: #333;
+    background-color: #fff;
+    border-radius: 0.5em;
+    width: 60%;
+    border: 1px solid #ccc;
+}
+button {
+    padding: 1em 2em;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #DD5735;
+    border-color: #DD5735;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+button:hover {
+    text-decoration: none;
+    color: #DD5735;
+    background-color:#fff;
+}
+textarea {
+    width: 100%;
+    height: 100px;
+    border-color: rgba(0,0,0,0.1);
+    border-radius: 0.5em;
+    padding: 1em;
+    resize: vertical;
+}

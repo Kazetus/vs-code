@@ -1,0 +1,67 @@
+/* classes */
+.back1 {
+    background-image: url(../ressources/large.jpg);
+    width: 40em;
+    height: 20em;
+    background-color: teal;
+    padding: 2em;
+    color: #fff;
+}
+.back {
+    background-image: url(../ressources/small.jpg);
+    width: 40em;
+    height: 20em;
+    background-color: teal;
+    padding: 2em;
+    color: #fff;
+}
+.img {
+    
+}
+.img1 {
+    background-repeat: repeat;
+}
+.img2{
+    background-repeat: no-repeat;
+}
+.img3 {
+    background-repeat: repeat-x;
+}
+.img4 {
+    background-repeat: repeat-y;
+}
+.img5 {
+    background-size: contain;
+}
+.img6 {
+    background-size: cover;
+}
+.img7 {
+    background-size: 50%;
+}
+.img8 {
+    background-size: 80% 40%;
+}
+.img9 {
+    background-position: center;
+}
+.img10 {
+    background-position: right top;
+}
+.img11 {
+    background-position: right bottom;
+}
+.img12 {
+    background-position: 80% 40%;
+}
+.code {
+    display: block;
+    margin: 1em 0;
+    font-weight: Bold;
+    font-size: 1em;
+}
+/* balises */
+main {
+    margin: 10px 10% 10px 10%;
+    background-color: white;
+}

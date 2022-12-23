@@ -1,0 +1,67 @@
+.degrade1 {
+    background: linear-gradient(gold,red);
+}
+.degrade2 {
+    background: linear-gradient(green,gold,red);
+}
+.degrade3 {
+    background: linear-gradient(90deg,green,gold,red);    
+}
+.degrade4 {
+    background: linear-gradient(90deg, green,green 25% ,gold 25%, red);    
+}
+.degrade5 {
+    background: repeating-linear-gradient(90deg,green,gold,red 25%);    
+}
+.degrade6 {
+    background: radial-gradient(gold,red);    
+}
+.degrade7 {
+    background: radial-gradient(circle,gold,red);    
+}
+.degrade8 {
+    background: radial-gradient(circle closest-side,gold,red);    
+}
+.degrade9 {
+    background: radial-gradient(circle closest-side at 25%,gold,red);  
+}
+.boxshadow1 {
+    box-shadow: 0 0.5rem 0.5rem grey;
+}
+.boxshadow2 {
+    box-shadow: 0 1rem 1rem 0.2rem grey;
+}
+.boxshadow3 {
+    box-shadow:0 0 0.5rem black inset;
+}
+.boxshadow4 {
+    box-shadow: 0.5rem 0.5rem 0.5rem red;
+}
+.boxshadow5 {
+    box-shadow: 0 0 0.5rem 0.5rem red;
+}
+.boxshadow6 {
+    box-shadow: 0 0.5rem 0.5rem green,0 0.7rem 0.5rem 3px yellow, 0 1rem 0.5rem 0.5rem orange;
+}
+.textshadow1 {
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
+    color: white;
+}
+.textshadow2 {
+    text-shadow:0.5rem 0.5rem 0.5rem black;
+    color: white;
+}
+.textshadow3 {
+    text-shadow: 0 0.5rem 0.5rem red;
+    color:white;
+}
+.textshadow4 {
+    color:white;
+    text-shadow: 0 0 0.5rem green, 0 0.5rem 0.5rem orange;
+}
+p {
+    padding: 3em;
+}
+.card {
+    	background-color: #eee;
+}

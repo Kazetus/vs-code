@@ -1,0 +1,14 @@
+.button {
+    border-radius: 2em;
+    background-color: #dd5735;
+    padding: 1em;
+}
+.button:hover {
+    background-color: red;
+}
+.button:active {
+    background-color: yellow;
+}
+#target {
+    color: blue;
+}

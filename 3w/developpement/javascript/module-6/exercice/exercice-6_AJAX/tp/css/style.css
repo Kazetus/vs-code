@@ -1,0 +1,14 @@
+.bordered {
+    border: 2px solid lightblue;
+}
+img {
+    max-width: 100%;
+}
+.container {
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.container div{
+    width: 30%;
+}

@@ -1,0 +1,26 @@
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.over {
+    overflow: hidden;
+}
+.clearfix::after {
+    content:"";
+    clear: both;
+    display: block;
+    border-bottom: 3px solid purple;
+}
+.clear {
+    clear: both;
+    border-bottom: 3px solid red;
+}
+.large {
+    display: inline-block;
+    max-width: 50%;
+}
+.parent {
+    padding: 1em;
+}

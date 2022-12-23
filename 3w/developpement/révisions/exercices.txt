@@ -1,0 +1,120 @@
+1--
+$liste=[6,"lait"=>2,"orange"=>4,9,"chat"=>"chien"];
+$test = false;
+foreach ($liste as $list) {
+    if($list === "chat") {
+        $test = true;
+    }
+}
+if($test) {
+    echo "Chat est présent";
+}
+else {
+    echo "Chat n'est pas présent;
+}
+
+2--
+$name = $_GET['last-name'];
+
+3--
+1) $_POST['password']
+2) machin.php
+3)Il faut utiliser un htmlspecialchars sur les champs de texte du formulaire.
+4)if(isset($_POST['name']) && !empty($_POST['name'] && isset($_POST['prenom']) && !empty($_POST['prenom'] && isset($_POST['password']) && !empty($_POST['password'])
+5)ctype_alpha
+6)La method GET serait utilisé par défaut.
+
+4--
+$cpt =1;
+$cpt =3;
+$cpt =6;
+$cpt =10;
+$cpt =15;
+$cpt =21;
+$cpt =28;
+$cpt =36;
+$cpt =45;
+
+5--
+<ul>
+    <?php foreach($classe as $eleve => $moyenne) : ?> 
+    <li><?=$eleve." ".$moyenne?></li>
+    <?php endforeach; ?>
+</ul>
+
+6--
+<ul>
+    <?php foreach($produit as $list) : ?>
+    <li> Nom : <?=$list['nomProduit'].", quantité : ".$list['quantite'].", prix : ".$list['prix']?> </li>
+    <?php endforeach; ?>
+</ul>
+
+7--
+console.log(tab[1][1]);
+
+8--
+Dans le tableau, la valeur tab[2] qui est 8 sera remplacée par 5.
+Puis, somme additionnera chaque valeur du tableau, ce qui donnera :
+somme = 2
+somme = 5
+somme = 10
+somme = 19
+somme = 29
+
+9--
+coucou
+coucou
+coucou
+coucou
+coucou
+coucou
+coucou
+coucou
+coucou
+coucou
+coucou
+
+10--
+1)
+$(function() {
+    //DOM Chargé
+});
+2)Le gestionnaire d'évènement
+3)Elle sert à vérifier que le contenu du document est bien chargé avant de faire des manipulations Javascript
+
+11--
+function isEven(nbr) {
+    if (nbr%2 ===0) {
+        return "le nombre est pair";
+    }
+    else {
+        return "le nombre est impair";
+    }
+}
+12--
+1)$('p.green')
+2)$('.red > .green')
+
+13--
+Ca va afficher black.
+
+14--
+String, Number, booléen, null, undefined, symbol et Object.
+
+15--
+// soit les expressions booléennes suivantes : 
+
+true && false  =  false
+false || false = false
+(true || false) || false = true
+true && (false || true) = true
+(true && true) || (false || false) =true
+
+// avec la variable $bool=true et bool1=false
+
+($bool) && ($bool1) = false
+(true && false) || ($bool1) = false
+true && (false || (true && $bool)) = true
+true && (false || ($bool && true)) = true
+true && (false || ($bool && $bool1)) = false
+true && (false || ($bool1 && true))  = false

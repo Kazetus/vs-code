@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Robot factory</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+</head>
+<body>
+    <?php if (isset($_POST['name'])) : ?>
+        <?= 'Salut, humain. Je suis '.$name.' .' ?>
+        <?= '<br>' ?>
+        <?= 'Nous sommes le '.$date.', il est '.$hours.'.'?>
+        <?= '<br>' ?>
+        <?= 'J\' ai choisi le nombre '.$number.'. C\'est un nombre '.$pair.'.' ?>
+        <?= '<br>' ?>
+        <?= ' Mon nom à l\'envers s\'écrit '.strrev($name).' . Ah. Ah. Ah.' ?>
+        <?= '<br>' ?>
+        <?= $menace ?>
+        <?= '<br>' ?>
+        <?= 'Le subconscient du robot a choisi : '.$subNumber ?>
+        <?= '<br>' ?>
+    <?php if ($menace === "<span class='evil'>Extermination ! Extermination !</span>") { ?>
+        <?= '<span class=\'evil\'>J\'ai trouvé, le numéro était : '.$robotNumber.'</span>' ?>
+    <?php } else { ?>
+        <?= 'J\'ai trouvé, le numéro était : '.$robotNumber ?>
+    <?php } ?>
+    <?php else : ?>
+    <form method="POST" action="index.php">
+        <label for="name">Nom de votre robot (format:"XX-0000")</label><br/>
+        <input type="text" name="name" id="name" pattern="[A-Z]{2}+[-]+[0-9]{4}"/>
+        <br/>
+        <select name="morale">
+            <option value="random">Aléatoire</option>
+            <option value="destroyer">Exterminateur</option>
+            <option value="friend">Serveur de café</option>
+
+        </select>
+        <br/>
+        <input type="submit" value="Submit"/>
+    </form>
+    <?php endif ?>
+</body>
+</html>

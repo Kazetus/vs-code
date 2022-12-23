@@ -1,0 +1,93 @@
+/*////////////////////
+                    TOOLS
+                        //////////////////////*/
+
+/*////////////////////
+                    CLASSES
+                        //////////////////////*/
+.mixitup-control-active {
+    background-color: #950000;
+    color: white;
+}
+.menucontainer {
+    text-align: center;
+    margin: 1em;
+    margin-top: 2em;
+    font-weight: Bold;
+}
+.menuflex {
+    display: flex;
+    flex-wrap: wrap;
+/*    align-content: space-around;*/
+    justify-content: space-around;
+    background-color: #ede3db;
+    padding: 1em;
+}
+.flexwidth {
+    width: 48%;
+    margin: 1em 0em;
+    box-shadow: 1px 1px 10px #4c4343;
+}
+/*////////////////////
+                    BALISES
+                        //////////////////////*/
+button {
+    padding: 0.5em 1em;
+    margin: 1em 0.5em;
+    background-color: #ede3db;
+    color: black;
+    border: 0;
+    text-transform: uppercase;
+    font-family: 'Athiti', sans-serif;
+    font-size: 1.6rem;
+    font-weight: Bold;
+    transition: background-color 1s, color 1s;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #950000;
+    color: white;
+}
+.flexwidth img {
+    display: block;
+}
+figure {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 0;
+    transition: transform 1s;
+}
+figcaption {
+    position: absolute;
+    top: 0; bottom: 0; right: 0; left: 0;
+    transition: opacity 1s;
+    background-color: rgba(76,67,67,.9);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+figcaption div{
+    border: 4px solid white;
+    padding: 2em;
+}
+figure:hover {
+    transform: scale(1.2);
+    z-index: 1;
+}
+figure:hover figcaption {
+    opacity: 1;
+}
+/*////////////////////////////////
+        Media Query
+///////////////////////////////*/
+@media screen and (min-width:780px) {
+    .flexwidth {
+        width: 32%;   
+    }
+}
+
+@media screen and (min-width: 980px) {
+
+}

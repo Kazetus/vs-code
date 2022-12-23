@@ -1,0 +1,55 @@
+/*////////////////////
+                    TOOLS
+                        //////////////////////*/
+
+/*////////////////////
+                    CLASSES
+                        //////////////////////*/
+.video {
+    width: 80%;
+    margin: auto;
+}
+.flexpresent {
+    padding: 1em; 
+    background-color: #ede3db;
+}
+/*////////////////////
+                    BALISES
+                        //////////////////////*/
+video {
+    max-width: 100%;
+}
+p {
+    font-weight: Bold;
+}
+figcaption {
+    text-align: center;
+}
+figure {
+    width: 100%;
+    text-align: center;
+    margin: 1em 0;
+}
+figure img {
+    box-shadow: 1px 1px 10px #4c4343;
+}
+article {
+    margin: 1em;
+}
+/*////////////////////////////////
+        Media Query
+///////////////////////////////*/
+@media screen and (min-width:780px) {
+    .flexpresent {
+        display: flex;
+        flex-wrap: wrap;
+        Justify-content: space-between;
+    }
+    figure {
+        width: 48%;
+    }
+}
+
+@media screen and (min-width: 980px) {
+
+}

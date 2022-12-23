@@ -1,0 +1,30 @@
+.move {
+    text-decoration: none;
+    padding: 1em;
+    background-color: #DD5735;
+    transition: all 1s;
+}
+.navbut {
+    color: white;
+}
+a:hover {
+    text-decoration: none;
+}
+a{
+    transition: all 1s;
+}
+ul {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    justify-content: space-around;
+    background-color: #DD5735;
+    height: max-content;
+}
+.move:hover {
+    background-color: Yellow;
+    transform: scale(2);
+}
+.move:hover a{
+    color: black;
+}

@@ -1,0 +1,37 @@
+/* Classe */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.cards {
+    padding:2em;
+	background-color: rgba(0,0,0,0.1);
+}
+.flex {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card {
+    width: 40%;
+	background-color: white;
+	margin-bottom: 1em;
+}
+.pmarg {
+    margin:0;
+    padding:1em;
+}
+.taille {
+    width: 100%;
+}
+/* Balises */
+p a {
+    text-decoration: none;
+    color: blue;
+    line-height: 0;
+    font-size: 0.6em;
+    margin: 0;
+}
+h4 {
+    text-align: center;
+}

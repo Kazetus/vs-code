@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common-v2.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Les tables</h1>
+            Faire des tables simples et complexes
+        </header>
+    <main>
+        <h2>Une table simple</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Entête 1</th>
+                    <th>Entête 2</th>
+                    <th>Entête 3</th>
+                    <th>Entête 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Case 1</td>
+                    <td>Case 2</td>
+                    <td>Case 3</td>
+                    <td>Case 4</td>
+                </tr>
+            </tbody>
+                <tr>
+                    <td>Case 5</td>
+                    <td>Case 6</td>
+                    <td>Case 7</td>
+                    <td>case 8</td>
+                </tr>
+        </table>
+        <h3>La même table avec des cases fusionnées</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Entête 1</th>
+                    <th>Entête 2</th>
+                    <th>Entête 3</th>
+                    <th>Entête 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Case 1</td>
+                    <td colspan="2">Case 2</td>
+                    <td rowspan="2">Case 4</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Case 5</td>
+                    <td>Case 7</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Une table plus complexe</h2>
+        <table class="colle">
+            <thead>
+                <tr>
+                    <th colspan="6" class="gros">Régions françaises</th>
+                </tr>
+                <tr>
+                    <th class="tete">Nom</th>
+                    <th class="tete">Code ISO</th>
+                    <th class="tete">Code INSEE</th>
+                    <th class="tete">Superficie (km<sup>2</sup>)</th>
+                    <th class="tete">Population 2020</th>
+                    <th class="tete">Nombres de communes</th>
+                </tr>
+            </thead>
+            <tbody class="texte">
+                <tr>
+                    <td class="grey">Auvergne-Rhône-Alpes</td>
+                    <td class="grey">FR-ARA</td>
+                    <td class="grey">84</td>
+                    <td class="grey">69 711</td>
+                    <td class="grey">8 032 377</td>
+                    <td class="grey">4 030</td>
+                </tr>
+                <tr>
+                    <td>Bourgogne-Franche-Comté</td>
+                    <td>FR-BFC</td>
+                    <td>27</td>
+                    <td>47 784</td>
+                    <td>2 783 039</td>
+                    <td>3 702</td>
+                </tr>
+                <tr>
+                    <td class="grey">Bretagne</td>
+                    <td class="grey">FR-BRE</td>
+                    <td class="grey">53</td>
+                    <td class="grey">27 208</td>
+                    <td class="grey">3 340 379</td>
+                    <td class="grey">1 208</td>
+                </tr>
+                <tr>
+                    <td>Centre-Val de Loire</td>
+                    <td>FR-CVL</td>
+                    <td>24</td>
+                    <td>39 151</td>
+                    <td>2 559 073</td>
+                    <td>1 757</td>
+                </tr>
+                <tr>
+                    <td class="grey">Corse</td>
+                    <td class="grey">FR-COR</td>
+                    <td class="grey">94</td>
+                    <td class="grey">8 680</td>
+                    <td class="grey">344 679</td>
+                    <td class="grey">360</td>
+                </tr>
+                <tr>
+                    <td>Grand Est</td>
+                    <td>FR-GES</td>
+                    <td>44</td>
+                    <td>57 441</td>
+                    <td>5 511 747</td>
+                    <td>5 121</td>
+                </tr>
+                <tr>
+                    <td class="grey">Hauts-de-France</td>
+                    <td class="grey">FR-HDF</td>
+                    <td class="grey">32</td>
+                    <td class="grey">31 806</td>
+                    <td class="grey">5 962 662</td>
+                    <td class="grey">3 789</td>
+                </tr>
+                <tr>
+                    <td>Île-de-France</td>
+                    <td>FR-IDF</td>
+                    <td>11</td>
+                    <td>12 011</td>
+                    <td>12 278 210</td>
+                    <td>1 268</td>
+                </tr>
+                <tr>
+                    <td class="grey">Normandie</td>
+                    <td class="grey">FR-NOR</td>
+                    <td class="grey">28</td>
+                    <td class="grey">29 907</td>
+                    <td class="grey">3 303 500</td>
+                    <td class="grey">2 652</td>
+                </tr>
+                <tr>
+                    <td>Nouvelle-Aquitaine</td>
+                    <td>FR-NAQ</td>
+                    <td>75</td>
+                    <td>84 036</td>
+                    <td>5 999 982</td>
+                    <td>4 314</td>
+                </tr>
+                <tr>
+                    <td class="grey">Occitanie</td>
+                    <td class="grey">FR-OCC</td>
+                    <td class="grey">76</td>
+                    <td class="grey">72 724</td>
+                    <td class="grey">5 924 858</td>
+                    <td class="grey">4 454</td>
+                </tr>
+                <tr>
+                    <td>Pays de la Loire</td>
+                    <td>FR-PDL</td>
+                    <td>52</td>
+                    <td>32 082</td>
+                    <td>3 801 797</td>
+                    <td>1 238</td>
+                </tr>
+                <tr>
+                    <td class="grey">Provence-Alpes-Côte d'Azur</td>
+                    <td class="grey">FR-PAC</td>
+                    <td class="grey">93</td>
+                    <td class="grey">31 400</td>
+                    <td class="grey">5 055 651</td>
+                    <td class="grey">946</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total</td>
+                    <td>543 941</td>
+                    <td>64 897 954</td>
+                    <td>34 839</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <footer class="footer">
+            <p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png"></a></p>
+	        <p>Ce matériel pédagogique est la propriété de la <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par Stephane Pereck.</p>
+    </footer>
+    </div>
+</body>
+</html>

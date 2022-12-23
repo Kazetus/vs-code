@@ -1,0 +1,86 @@
+<?php if(isset($_SESSION['admin'])): ?>
+    <div class="row">
+        <article class="col-8">
+            <h1>Articles :</h1>
+            <p><a class="button" href="ajout_article.php?id_add=article">Ajouter un nouvel article</a></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Titre</th>
+                        <th>Article</th>
+                        <th>Auteur</th>
+                        <th>Catégorie</th>
+                        <th>     </th>
+                        <th>     </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach($articles as $article) : ?>
+                    <tr>
+                        <td><?= $article['articleTitle'] ?></td>
+                        <td><?= substr($article['articleText'], 0, 50) ?> ...</td>
+                        <td><?= $article['authorFirstName'] ?></td>
+                        <td><?= $article['categorieName'] ?></td>
+                        <td><a href="modif_article.php?id_article=<?=$article['ID_article']?>&amp;id_modif=article"><i class="fa-solid fa-pen-to-square"></i></a></td>
+                        <td><a href="delete.php?id_article=<?=$article['ID_article']?>&amp;id_modif=article" onclick="return(confirm('Etes-vous sûr de vouloir supprimer cet article?'));"><i class="fa-solid fa-trash"></i></a></td>
+                    </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+        </article>
+        <div class="col-4">
+            <article>
+                <h1>Auteurs :</h1>
+                <p><a class="button" href="ajout_article.php?id_add=auteur">Ajouter un nouvel auteur</a></p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Auteurs</th>
+                            <th>     </th>
+                            <th>     </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach($authors as $author) : ?>
+                        <tr>
+                            <td><?= $author['authorFirstName'] ?> <?= $author['authorLastName'] ?></td>
+                            <td><a href="modif_article.php?id_author=<?=$author['ID_author']?>&amp;id_modif=auteur"><i class="fa-solid fa-pen-to-square"></i></a></td>
+                            <td><a href="delete.php?id_author=<?=$author['ID_author']?>&amp;id_modif=auteur" onclick="return(confirm('Etes-vous sûr de vouloir supprimer cet auteur?'));"><i class="fa-solid fa-trash"></i></a></td>
+                        </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </article>
+            <article>
+                <h1>Catégories :</h1>
+                <p><a class="button" href="ajout_article.php?id_add=categorie">Ajouter une nouvelle catégorie</a></p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Catégorie</th>
+                            <th>     </th>
+                            <th>     </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach($categories as $categorie) : ?>
+                        <tr>
+                            <td><?= $categorie['categorieName'] ?></td>
+                            <td><a href="modif_article.php?id_categorie=<?=$categorie['ID_categorie']?>&amp;id_modif=categorie"><i class="fa-solid fa-pen-to-square"></i></a></td>
+                            <td><a href="delete.php?id_categorie=<?=$categorie['ID_categorie']?>&amp;id_modif=categorie" onclick="return(confirm('Etes-vous sûr de vouloir supprimer cette catégorie?'));"><i class="fa-solid fa-trash"></i></a></td>
+                        </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </article>
+        </div>
+    </div>
+<?php else: ?>
+    <form action="admin.php" method="POST">
+        <fieldset><legend>Mon compte</legend>
+            <input type="text" name="pseudo"/>
+            <input type="password" name="password"/>
+            <input type="submit" value="Submit"/>
+        </fieldset>
+    </form>
+<?php endif; ?>

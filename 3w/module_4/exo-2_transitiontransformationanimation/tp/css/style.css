@@ -1,0 +1,60 @@
+.card {
+    background-color: yellow;
+    width: 300px;
+    margin: 100px auto 0;
+}
+.moveright {
+    transform-origin: center center;
+    transform: translateX(200px);
+}
+.zoom {
+    transform-origin: center center;
+    transform: scale(0.5);
+}
+.tourne {
+    transform-origin: center center;
+    transform: rotate(45deg);
+}
+.etire {
+    transform-origin: center center;
+    transform: skewX(40deg);
+}
+.latotale {
+    transform-origin: center center;
+    transform: 
+                translateX(200px)
+                rotate(45deg)
+                scale(0.50)
+                ;
+}
+.ok {
+    padding:1em;
+    background-color: #8b0000;
+    color:white;
+    border:0;
+}
+.testtransi {
+    transition-property: all;
+    transition-duration: 1s;
+}
+.testtransi:hover{
+    background-color: lightblue;
+    transform: scale(2);
+}
+article {
+    margin: 1em;
+    padding: 1em;
+}
+.testanim {
+    transform-origin: center center;
+    transform: scale(0);
+}
+.ok:focus ~ .testanim{
+    animation: zoomIn 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes zoomIn {
+    0% { transform: scale(0); }
+    100% {transform: scale(1);}
+
+}

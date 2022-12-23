@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="container">
+                <p class=title><a href="accueil.php">Bloggy blog</a></p>
+                <div class="button right">
+                    <a href="admin.php"><i class="fa-solid fa-screwdriver-wrench"></i>Administration</a>
+                </div>
+                <?php if(isset($_SESSION['admin'])) : ?>
+                <div class="button right">
+                    <a href="logout.php">Déconnexion</a>
+                </div>
+                <?php endif; ?>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="button">
+                <a href="accueil.php"><i class="fa-solid fa-house-chimney"></i> Accueil</a>
+            </div>
+        <?php require $template.".phtml" ?>
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="js/javascript.js"></script>
+</body>
+</html>

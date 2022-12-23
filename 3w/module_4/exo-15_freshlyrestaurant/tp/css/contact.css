@@ -1,0 +1,109 @@
+/*////////////////////
+                    TOOLS
+                        //////////////////////*/
+
+/*////////////////////
+                    CLASSES
+                        //////////////////////*/
+.smallitalic {
+    font-weight: Bold;
+    font-style: Italic;
+}
+.flexfield {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.content {
+    width: 48%;
+    margin-bottom: 1em;
+    position: relative;
+}
+.asterisk {
+    color: #950000;
+    text-decoration: underline dotted #950000;
+    font-size: 2rem;
+}
+.required::before {
+    content: "* ";
+    position: absolute;
+    left: -0.7em;
+    color: #950000;
+    text-decoration: underline dotted #950000;
+    font-size: 2rem;
+}
+/*////////////////////
+                    BALISES
+                        //////////////////////*/
+form {
+    padding: 1em 2em; 
+    text-align: left;
+    background-color: #ede3db;
+}
+input {
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    border: 1px solid black;
+    height: 40.69px;
+    margin-bottom: 1em ;
+}
+label {
+    font-weight: Bolder;
+}
+strong {
+    font-family: 'Merienda', cursive;
+}
+article {
+    text-align: center;
+    margin: 1em;
+}
+h1 ~ p {
+    font-weight: Bold;
+    
+}
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    border: 1px solid black;
+    resize: vertical;
+}
+button {
+    width: 50%;
+    display: block;
+    margin: 2em auto 0;
+    padding: 0.5em;
+    background-color: #4c4343;
+    border:0;
+    color: white;
+    border-radius: 0.5em;
+    font-size: 1.6rem;
+}
+iframe {
+        width: 100%;
+}
+.content p{
+    margin-top: 0;
+}
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+/*////////////////////////////////
+        Media Query
+///////////////////////////////*/
+@media screen and (min-width:780px) {
+
+}
+
+@media screen and (min-width: 980px) {
+    iframe {
+        width: 80%;
+    }
+    form {
+        width: 60%;
+        margin: 1em auto;
+    }
+}

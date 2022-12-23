@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3WA restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__display">
+                <p><a class="header__title" href="index.php">3WA Restaurant</a></p>
+                <p>Restaurant - Made in America !</p>
+            </div>
+            <div>
+                <div class="header__nav">
+                    <?php if($this -> isAdmin()) : ?>
+                         <div>
+                            <a class="btn btn-success" href="index.php?action=admin">Admin panel</a>
+                        </div>
+                        <div>
+                            <p class="header__user">Bonjour<span class="header__user--color"> <?=$_SESSION['admin']['pseudo']?></span></p>
+                            <a class="btn btn-success" href="index.php?action=adminLogout">logout</a>
+                        </div>
+                    <?php elseif($this -> isConnect()) : ?>
+                        <div>
+                            <a class="btn btn-success" href="index.php?action=book">Book</a>
+                            <a class="btn btn-success" href="index.php?action=order">Order</a>
+                        </div>
+                        <div>
+                            <p class="header__user">Bonjour<span class="header__user--color"> <?=$_SESSION['user']['firstName']." ".$_SESSION['user']['lastName']?></span></p>
+                            <a class="btn btn-success" href="index.php?action=logout">logout</a>
+                        </div>
+                    <?php else : ?>
+                    <a class="btn btn-success" href="index.php?action=create_account">Register</a>
+                    <a class="btn btn-success" href="index.php?action=login">Login</a>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <?php if(array_key_exists("message",$_GET)): ?>
+        <div class="card__message">
+            <p> <?= $_GET['message'] ?> </p>
+        </div>
+        <?php endif; ?>
+        
+        <?php if(isset($message)): ?>
+        <div class="card__message">
+            <p> <?= $message ?> </p>
+        </div>
+        <?php endif; ?>
+        <div class="container">
+        <?php require $template.".phtml" ?>
+        </div>
+    </main>
+    <footer>
+        <div class="container footer__payment">
+            <p><i class="fa-brands fa-cc-visa"></i>Visa - <i class="fa-brands fa-cc-mastercard"></i>Mastercard - <i class="fa-brands fa-cc-paypal"></i>Paypal</p>
+        </div>
+    </footer>
+    <script src="javascript/valid_action_commande.js"></script>
+</body>
+</html>

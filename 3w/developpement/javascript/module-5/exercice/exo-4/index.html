@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS5.1 VUE</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css"/>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<!--  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>-->
+</head>
+<body>
+  <div class="container">
+    <div @click ="cliqueOnPage" class="detect" id="app">
+        <div class="compteur"> {{ cpt }} </div>
+        <button @click='cremente'>+</button>
+        <button @click="decremente">-</button>
+        <div> X: {{ x }} / Y: {{ y }} </div>
+    </div>
+  </div>
+<script type="module" src="js/exercice3.js"></script>
+</body>
+</html>

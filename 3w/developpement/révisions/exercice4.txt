@@ -1,0 +1,146 @@
+51--
+
+AJAX permet d'échanger des informations entre un code Javascript et un code PHP.
+Il faut faire appel a l'objet XMLHttpRequest.
+
+52--
+
+let tab = [1.1,2.2,3.3,4.4,5.5,6.6,7.7,8.8,9.9,10.1,11.1,12.2,13.3,14.4,15.5,16.6,17.7,18.8,19.9,20.1];
+function addition(tableau) {
+    let totalAdd = 0;
+    for(let i=0; i < tableau.length; i++) {
+        totalAdd += tableau[i];
+    }
+    return totalAdd;
+}
+function multiply(tableau) {
+    let totalMul = 1;
+    for(let i=0;i<tableau.length;i++) {
+        totalMul *= tableau[i];
+        console.log(totalMul);
+    }
+    return totalMul;
+}
+
+let resultAdd = addition(tab);
+let resultMul = multiply(tab);
+console.log(resultAdd);
+console.log(resultMul);
+
+53--
+
+0
+
+54--
+
+2
+
+55--
+
+Le rôle de la feuille de style normalize.css est d'essayé de compenser l'affichage du code HTML par défaut du navigateur afin de rendre le comportement des éléments HTML plus prévisibles tout navigateur confondu afin
+de facilité le travail d'adapter le style a tout les navigateurs sans qu'un comportement par défaut viennent modifier l'affichage prévus.
+
+56--
+
+let N = 6;
+let i = 0;
+let total = 0;
+
+do {
+    total += i;
+    i++;
+}
+while (i <= N);
+
+console.log(total);
+
+57--
+
+Model-View-Controller ou Modèle-Vue-Controlleur en français, c'est une méthode de classement des fichiers PHP en fonction de leur contenu pour simplifier la lecture du code en vue de faire des modifications.
+
+1) M - Model
+
+On y met nos fichiers PHP contenant les requètes SQL pour agir sur la base de donnée.
+
+2) V - View
+
+On y met nos templates phtml contenant la partie du code html qui sera lié au model et au controller.
+
+3) C - Controller
+
+On y mets nos controller, ce sont les fichiers qui vont commandés les autres, dans lesquels nous stockeront les différentes opérations que l'on souhaite mener sur la page.
+
+4)
+
+C'est une classe que l'on crée et qui sera chargé de générer le chemin vers les différents fichiers que l'on souhaite utiliser dans notre page.
+
+58--
+
+Toutes les options afficheront une erreur à cause de la variable présente dans le string.
+
+59--
+
+// result = tab[0][1]+tab[2][0];
+2
+// result = tab[0][3]+tab[1][1];
+4b
+// result = tab[1][4]+tab[2][2];
+NaN
+// result = tab[2][2]+tab[2][2];
+4
+// result = tab[0][4]+tab[2][3];
+8
+60--
+
+Oui, à condition de bien respecter les méthodes déclaré en abstract dans la classe abstract.
+
+61--
+
+En mettant en place les interfaces et les traits.
+
+62--
+
+Il faut mettre "?" devant le type du paramètre pour indiquer qu'il peut être nul ou le type demandé.
+
+63--
+
+Il crée un cookie dans le navigateur du client.
+
+64--
+
+L'encapsulation.
+
+65--
+
+Points communs: 
+
+Les deux sont des éléments à intégrer dans la partie html de la page.
+
+Différences:
+
+Le SVG est une image formé à l'aide de vecteur, le canvas est une page vierge que l'on dois remplir avec de la programmation.
+Le SVG étant vectoriel, il n'est pas affecté par le zoom, son rendu sera toujours le même. Le canvas est composé de pixel brut, il est très sensible au zoom.
+On peut agir sur le SVG avec du CSS alors que le contenu du canvas est géré par Javascript.
+
+66--
+
+La composition permet d'employer plusieurs classe différentes alors qu'on ne peut hériter que d'une seule classe.
+
+La composition.
+
+67--
+
+Non, une classe héritant d'une classe abstraite doit utiliser toutes les méthodes abstraites.
+
+68--
+
+Méthode abstract alors que la class n'est pas abstract.
+
+69--
+1) Il manque un _ à _construct et il n'y a pas d'argument $couleur dans le setter
+2)C'est un setter ou mutateur
+3)C'est un getter ou accesseur
+4)L'encapsulation
+5) Public et protected
+6)extends JeuDeCarte
+7)Non, une classe ne peut hérité que d'une seule autre classe.

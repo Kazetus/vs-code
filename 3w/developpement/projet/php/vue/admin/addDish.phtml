@@ -1,0 +1,21 @@
+<h1>Add a new dish</h1>
+<form action="index.php?action=addDish" method="POST" enctype="multipart/form-data">
+    <fieldset class="register__field"><legend>Informations</legend>
+        <div class="row field__div">
+            <label class="col-3" for="dishName">Name :</label>
+            <input class="col-9" type="text" id="dishName" name="dishName"/>
+            <label class="col-3" for="categorie">Categorie :</label>
+            <input class="col-9" type="text" id="categorie" name="categorie">
+            <label class="col-3" for="image">Photos :</label>
+            <input class="col-9" type="file" id="image" name="image"/>
+        </div>
+    </fieldset>
+    <fieldset class="register__field"><legend>Price</legend>
+        <div class="row field__div">
+            <label class="col-3" for="price">Price :</label>
+            <input class="col-9" type="text" id="price" name="price"/>
+        </div>
+    </fieldset>
+    <button class="btn btn-success">Add new Dish</button>
+</form>
+

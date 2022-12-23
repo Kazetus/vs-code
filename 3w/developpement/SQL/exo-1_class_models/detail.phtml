@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>classic models order detail</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Order N° <?= $id ?></h1>
+        <a href="index.php">Order list</a>
+        <article class="right">
+            <h2><a href="detail_client.php?id_customer=<?=$customer['customerNumber']?>"> <?= $customer["customerName"] ?></a></h2>
+            <p class="contact"> <?= $customer["contactFirstName"] ?> <?= $customer["contactLastName"] ?> </p>
+            <p> <?= $customer["addressLine1"] ?> <?= $customer["addressLine2"]?></p>
+            <p> <?= $customer["city"] ?></p>
+        </article>
+        <article class="detail">
+            <h2>Order N° <?= $id ?> Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product name</th>
+                        <th class="right">Price</th>
+                        <th>Quantity</th>
+                        <th class= right>Total </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach($orderDetails as $orderDetail) : ?>
+                    <tr>
+                        <td><?= $orderDetail["productName"] ?></td>
+                        <td class="right"><?= number_format($orderDetail["priceEach"], 2) ?> $</td>
+                        <td><?= $orderDetail["quantityOrdered"] ?> </td>
+                        <td class="right"><?= number_format($orderDetail["total"], 2) ?> $</td>
+                    </tr>
+                    <?php endforeach; ?>
+                    <tr class="right-blue">
+                        <td colspan="3">Total Amount HT</td>
+                        <td><?= number_format($totalOrder, 2) ?> $</td>
+                    </tr>
+                    <tr class="right-blue">
+                        <td colspan="3">TVA (20%)</td>
+                        <td>
+                            <?= number_format($tva, 2); ?> $
+                        </td>
+                    </tr>
+                    <tr class="right-blue">
+                        <td colspan="3">Total Amount TTC</td>
+                        <td>
+                            <?= number_format($totalTtc, 2); ?> $
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+tbody, thead {
+    width: 100%;
+}
+th, td {
+    padding: 0.5em;
+}
+tr {
+    background-color: lightgrey;
+}
+tr:nth-child(even) {
+    background-color: grey;
+}
+th {
+    background-color: white;
+    color: #02A596;
+}
+body {
+    background-color: white;
+}
+article {
+    text-align: center;
+}
+h1 {
+    color: #02A596;
+}
+
+.right {
+    text-align: right;
+}
+.right-blue {
+    text-align: right;
+    color: #02A596;
+}
+.detail {
+    border-top: 2px solid grey;
+}
+.contact {
+    font-weight: Bold;
+}
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+h2 {
+    margin: 0.5em 0;
+}
+a {
+    text-decoration: none;
+    color: firebrick;
+}

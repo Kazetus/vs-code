@@ -1,0 +1,38 @@
+<div class="container">
+    <section class="articles">
+        <h1><i class="fa-solid fa-newspaper"></i> Article</h1>
+        <article class="clearfix">
+            <h2><?= $articles['articleTitle'] ?></h2>
+            <?php if($articles['image'] == "sans image") : ?>
+            <?php else : ?>
+            <img src="img/<?=$articles['image']?>" alt="<?=$articles['categorieName']?>"/>
+            <?php endif; ?>
+            <p><?= $articles['articleText'] ?></p>
+            <p><em>Rédigé par <?= $articles['authorFirstName'] ?> <?= $articles['authorLastName'] ?>, le <?= $articles['articleDate'] ?></em></p>
+        </article>
+    </section>
+    <section>
+        <h1>Commentaires</h1>
+        <article class="card">
+            <?php if(empty($comments)):?>
+                <p> Soyez le premier à commenter </p>
+            <?php else: ?>
+                <?php foreach($comments as $comment) : ?>
+                <p><strong><?= $comment['commentUser'] ?></strong></p>
+                <p><?= $comment['commentText'] ?></p>
+                <p><em><?= $comment['commentDate'] ?></em></p>
+                <?php endforeach ?>
+            <?php endif; ?>
+        </article>
+        <form action="ajout_comment.php" method="POST">
+            <fieldset><legend><i class="fa-solid fa-comment"></i> Nouveau commentaire</legend>
+                <input id="id_article" name="id_article" type="hidden" value=<?=$id?>>
+                <label for="name">Pseudo :</label>
+                <input type="text" id="pseudo" name="pseudo"/>
+                <label for="comment">Commentaire :</label>
+                <textarea id="comment" name="comment"></textarea>
+                <div class="button-mid"><button type="submit" class="button btn-valid">Ajouter</button></div>
+            </fieldset>
+        </form>
+    </section>
+</div>

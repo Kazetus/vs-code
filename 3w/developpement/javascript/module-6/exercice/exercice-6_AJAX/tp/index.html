@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <h1>EXERCICE AJAX</h1>
+    <div id="target" class="bordered">
+        <p>Résultats...</p>
+    </div>
+    <form action="index.php" method="POST">
+        <fieldset class="bordered"><legend>Votre choix</legend>
+            <label for="html">Récupérer un contenu html du serveur</label>
+            <input type="radio" name="choice" id="html" value="html" checked/>
+            <label for="json">Récupérer un contenu JSON du serveur</label>
+            <input type="radio" name="choice" id="json" value="json"/>
+            <label for="photos">Récupérer les photos</label>
+            <input type="radio" name="choice" id="photos" value="photos"/>
+        </fieldset>
+    </form>
+    <script src="js/javascript.js"></script>
+</body>
+</html>

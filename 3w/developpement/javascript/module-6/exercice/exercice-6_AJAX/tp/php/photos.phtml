@@ -1,0 +1,8 @@
+<div class="container">
+<?php foreach($photos as $photo) : ?>
+    <div>
+        <img src="img/<?=$photo['adresse']?>" alt="<?=$photo['name']?>"/>
+        <p><?=$photo['name']?></p>
+    </div>
+<?php endforeach; ?>
+</div>

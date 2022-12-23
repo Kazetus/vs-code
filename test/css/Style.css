@@ -1,0 +1,54 @@
+h1 {
+    margin-top: 0;
+}
+
+.title {
+    background-color: #6976F4;
+    text-align: center;
+}
+
+.nav {
+    background-color: #4855CA;
+    padding: 0.5rem;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu__list {
+    border: black solid 1px;
+    background-color: #2BC1C1;
+    padding: 0.5rem;
+}
+
+.menu__list:hover {
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+.content {
+    background-color: #55EAEA;
+}
+
+@media screen and (min-width: 500px) {
+    .container {
+        max-width: 800px;
+        margin: auto;
+    }
+    .menu {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .menu__list {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1100px;
+    }
+}

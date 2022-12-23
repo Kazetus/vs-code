@@ -1,0 +1,39 @@
+.parent {
+    padding: 1em;
+}
+article {
+    margin: 1em;
+}
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: #f49bf4;
+    z-index: 2;
+}
+.static {
+    position: static;
+    background-color: #009600;
+}
+.relative {
+    position: relative;
+    right: 5em;
+    background-color: orange;
+    z-index: 1;
+}
+.relative2 {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+    background-color: #cd853f;
+    top: 0; right:0;
+    padding: 1em;
+    z-index: 2;
+}
+.fixed {
+    position: fixed;
+    background-color: #6495ed;
+    top:0;
+    right: 15em;
+    width: 15%;
+}

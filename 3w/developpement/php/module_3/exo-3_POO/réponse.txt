@@ -1,0 +1,11 @@
+1-  Pas d'argument dans "setCouleur()".
+    Pas de "return" dans le getter.
+    Un seul _ devant le construct ?
+2- C'est un setter
+3- C'est un getter
+4- Définir la visibilité des propriétés de l'objet --> encapsulation .
+5- Il y a public et protected.
+6- Il faudrait ajouter "extends JeuDeCarte" dans la déclaration de la classe. Eventuellement, 'parent::__construct("argument si nécessaire");' dans le constructeur pour récupérer les propriétés du parent.
+7- Non, il faudrait supprimer l'héritage pour en mettre un autre à la place ?
+ trait 
+ interface 

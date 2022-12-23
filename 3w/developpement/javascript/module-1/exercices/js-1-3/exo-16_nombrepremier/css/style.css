@@ -1,0 +1,19 @@
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table {
+    text-align: right;
+}
+.color {
+    background-color: lime;
+}
+.block {
+    display: block;
+}
+label, input{
+    margin: 1em;
+}
+.disabled {
+    display: none;
+}

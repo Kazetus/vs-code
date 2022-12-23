@@ -1,0 +1,162 @@
+1- 
+SELECT `addressLine1`,`addressLine2`,`city`,`country`, `state`
+FROM `offices` 
+ORDER BY `country` DESC, `state` ASC
+
+--> 7
+
+2- 
+SELECT `productCode`,`productName`,`productLine`,`productVendor`,`quantityInStock` 
+FROM `products` 
+WHERE `productLine` = "Planes" 
+ORDER BY `productVendor`, `quantityInStock` DESC
+
+--> 12
+
+3-
+SELECT `productName`,`productVendor`,`MSRP` 
+FROM `products`
+WHERE `MSRP` >= 132 
+ORDER BY `productName`
+
+--> 24
+
+4- 
+SELECT `productCode`,`productName`,`productScale`,`quantityInStock`
+FROM `products`
+WHERE `productScale` = '1:10' OR `productScale` = '1:18'
+ORDER BY `quantityInStock` DESC
+
+--> 48
+
+5-
+SELECT productCode,productName,buyPrice
+FROM products
+WHERE buyPrice >= 60 AND buyPrice <= 90
+ORDER BY buyPrice DESC
+
+--> 34
+
+6-
+SELECT `productName`, `productVendor`, `quantityInStock`, (MSRP - buyPrice) as marges
+FROM products
+WHERE productLine = 'Motorcycles'
+ORDER BY marges
+
+--> 13
+
+7-
+SELECT `orderNumber`, `orderDate`, `shippedDate`, DATEDIFF(shippedDate, orderDate), `status`
+from `orders`
+WHERE `status` = 'In process' OR DATEDIFF(shippedDate, orderDate) > 10
+ORDER BY DATEDIFF(shippedDate, orderDate) DESC, `orderDate` DESC
+
+--> 7
+
+8-
+SELECT `productName`, `quantityInStock` * `MSRP`
+from `products`
+WHERE `productName` LIKE '196%'
+
+--> 16
+
+9-
+SELECT `productVendor`,avg(buyPrice)
+FROM `products`
+GROUP BY `productVendor`
+ORDER BY avg(buyPrice) DESC
+
+--> 13
+
+10-
+SELECT `productLine`, count(productName)
+FROM `products`
+GROUP BY `productLine`
+
+--> 7
+
+11-
+SELECT SUM(quantityInStock), SUM(MSRP), productLine
+FROM products
+WHERE MSRP > 100 
+GROUP BY productLine
+ORDER BY SUM(buyPrice)
+
+--> 7 
+
+12-
+SELECT MAX(quantityInStock), productVendor
+FROM products
+GROUP BY productVendor
+ORDER BY productVendor
+
+--> 13
+
+13-
+SELECT MIN(buyPrice)
+FROM products
+WHERE productLine ="Planes"
+
+--> 1
+
+14-
+SELECT customerNumber, SUM(amount)
+FROM payments
+WHERE paymentDate LIKE "2004%"
+GROUP BY customerNumber
+HAVING SUM(amount) > 20000
+ORDER BY SUM(amount) DESC
+
+--> 69
+
+15-
+SELECT lastName, firstName, jobTitle, addressLine1, addressLine2, city
+FROM employees
+INNER JOIN offices 
+ON employees.officeCode = offices.officeCode
+
+--> 23
+
+16-
+SELECT customerName, contactLastName, contactFirstName, country, firstName, lastName
+FROM customers
+INNER JOIN employees 
+ON customers.salesRepEmployeeNumber = employees.employeeNumber
+WHERE country = "France" OR country = "USA"
+ORDER BY country
+
+--> 48
+
+17-
+SELECT `orderNumber`,products.`productCode`,`productName`,`productLine`, (((MSRP - priceEach)/MSRP)*100) as remises
+FROM products
+INNER JOIN orderdetails
+ON products.productCode=orderdetails.productCode
+WHERE productLine= "motorcycles" OR productLine LIKE '%cars%'  
+ORDER BY `remises`  DESC
+
+--> 2026
+
+18-
+SELECT payments.customerNumber, customerName, country, sum(amount)
+FROM payments
+INNER JOIN customers
+ON payments.customerNumber=customers.customerNumber
+WHERE country = 'France' OR country = 'USA' OR country = 'Germany'
+GROUP BY payments.customerNumber
+HAVING sum(amount) > 50000
+
+--> 38
+
+19-
+SELECT orders.`orderNumber`, `orderDate`,orders.`customerNumber`, `customerName`, `city`, (sum(priceEach * quantityOrdered)) as total
+FROM orders
+INNER JOIN orderdetails
+ON orders.orderNumber = orderdetails.orderNumber
+INNER JOIN customers
+ON orders.customerNumber = customers.customerNumber 
+WHERE city= 'NYC'
+GROUP BY orders.orderNumber
+ORDER BY `customers`.`customerName` ASC
+
+--> 16

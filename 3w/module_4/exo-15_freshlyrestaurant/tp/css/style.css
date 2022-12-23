@@ -1,0 +1,215 @@
+/*////////////////////
+                    TOOLS
+                        //////////////////////*/
+* {
+	box-sizing: border-box; /* On spécifie que la largeur (width) de chaque boîte comprend le padding et la bordure (par défaut, c'est seulement la largeur du contenu) */
+}
+
+html {
+	font-size: 62.5%; /* 1rem = 10px (la formule est 10/16*100) la taille par défaut étant 16px */
+}
+
+body {
+	font-size: 1.6rem; /* on remets la taille du texte par défaut pour le body à 16px en utilisant les rem comme unité) */
+	color: black;
+}
+img {
+    max-width:100%;
+}
+.footer3wa {
+	padding: 2em;
+	text-align: center;
+	color: #fff;
+	background-color: #444;
+	font-size: 1.6rem;
+}
+.footer3wa a {
+	color: white;
+}
+.footer3wa img {
+    width: 60px;
+}
+#underfoot {
+    text-decoration: underline;
+}
+body {
+    margin: auto;
+    max-width: 780px;
+    font-family: 'Athiti', sans-serif;
+    font-size: 1.8rem;
+}
+.footertitle,h1,h2,h3,h4,h5 {
+    font-family: 'Merienda', cursive;
+}
+.sitename::before,h1::before,h2::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f005";
+    color: #950000;
+    font-size: 1rem;
+    padding-right: 1em;
+}
+.sitename::after,h1::after,h2::after {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f005";
+    color: #950000;
+    font-size: 1rem;
+    padding-left: 1em;
+}
+/*////////////////////
+                    CLASSES
+                        //////////////////////*/
+.sitename {
+    font-size: 3rem;
+    font-weight: Bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header img {
+    max-width: 20%;
+}
+.header {
+    text-align: center;
+    background: linear-gradient(180deg, #ebe3db, white 50%);
+}
+.navbutton {
+    padding: 1em 0;
+    background-color: #ebe3db;
+    font-weight: Bold;
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    transition: background-color 1s, color 1s;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #4c4343;
+}
+.premiernav {
+    border-top: 1px solid #4c4343;    
+}
+.navbutton:hover {
+    background-color: #950000;
+    color: white;
+}
+.navactive {
+    background-color: #4c4343;
+    color: white;
+}
+.footertitle {
+    border-bottom: 1px dashed white;
+    padding-bottom: 1em;
+    font-size: 1.8rem;
+}
+.footer {
+    background-image: url('../ressources/images/footer-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    padding: 2em 0;
+    font-size: 1.6rem;
+}
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+.fa-brands {
+    color: white;
+    letter-spacing: 1em;
+    font-size: 3rem;
+}
+.logo {
+    text-decoration: none;
+    color: black;
+}
+/*////////////////////
+                    BALISES
+                        //////////////////////*/
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+}
+h2 {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*////////////////////////////////
+        Media Query
+///////////////////////////////*/
+@media screen and (min-width:780px) {
+    body {
+        max-width: 980px;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        background-color: #ebe3db;
+    }
+    .navbutton {
+        padding: 0.5em;
+        border: 0;
+    }
+    .navbutton:last-child {
+        border: 0;
+    }
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        white-space: nowrap;
+    }
+    .footer div {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    body {
+        max-width: 100%;
+    }
+    .container {
+        max-width: 1400px;
+        margin: auto;
+    }
+    nav ul {
+        background-color: rgba(0,0,0,0);
+        justify-content: space-evenly;
+    }
+    nav {
+        width: 30%;
+    }
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 50%;
+        margin-left: 1em;
+    }
+    .flexnav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header img {
+        max-width: 20%;
+    }
+    .sitename {
+        margin-left: 1em;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+}

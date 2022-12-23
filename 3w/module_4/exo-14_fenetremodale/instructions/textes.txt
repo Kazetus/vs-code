@@ -1,0 +1,24 @@
+Fenêtre modale
+Faire une fenêtre modale, utilisation des propriétés position, animation et de JavaScript
+
+Cliquer sur le bouton pour ouvrir une fenêtre modale
+Afficher
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit corrupti cumque minus officiis repudiandae eos quis nobis repellat magni harum commodi fugit, facere neque sint ducimus, similique repellendus sapiente cupiditate.
+
+Asperiores cum, optio adipisci deleniti ratione quasi sunt autem beatae fugit voluptates ducimus, accusantium debitis amet soluta numquam. Harum nam error quod. Neque, praesentium dolorem vel excepturi nesciunt sequi ut.
+
+Vero optio laboriosam repudiandae necessitatibus dolorem obcaecati omnis architecto non quia. Veritatis illum repudiandae quae vitae facere aut ad, consequatur explicabo cum, quam aliquam, eveniet fugit laboriosam tempora accusantium eligendi.
+
+Incidunt quae modi minima atque, quasi necessitatibus in fugit eligendi aperiam cupiditate, perferendis accusamus unde voluptatum iusto debitis, provident reprehenderit dolore. Iure voluptates vero itaque, dolor aut omnis mollitia magni.
+
+Iste voluptas tenetur illo doloribus vitae perspiciatis vel eveniet ullam culpa pariatur? Repudiandae non veniam quia sint ullam voluptate nam earum quis ab a voluptates mollitia perspiciatis expedita, similique error.
+
+Hello!
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus vel hic iure magnam possimus in molestiae recusandae labore neque, explicabo veniam libero suscipit aspernatur ea, illum accusamus earum maxime dolorem amet, reiciendis. Ea, ipsum. Quis ab cumque cum libero mollitia dicta itaque ad reprehenderit placeat quos, facere possimus aperiam adipisci, consequuntur, exercitationem iste minima saepe voluptatibus neque sunt laboriosam. Accusantium cumque facilis laudantium necessitatibus vero ad, rerum in porro, saepe aperiam repudiandae eos, maxime dolorum perferendis? Obcaecati incidunt, vitae quaerat quisquam temporibus iure sequi a. Delectus quas dignissimos aperiam reiciendis, ipsum, doloremque doloribus quia itaque, quasi distinctio incidunt nesciunt esse.
+
+Fermer
+
+Propriété de la 3W Academy
+
+Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Stephane Pereck.

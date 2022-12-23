@@ -1,0 +1,7 @@
+ul {
+    list-style: none;
+}
+.header ul{
+    display: flex;
+    justify-content: space-evenly;
+}

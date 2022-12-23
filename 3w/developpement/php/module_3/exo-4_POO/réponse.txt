@@ -1,0 +1,6 @@
+1- l'instantiation de la classe "CorpsHumain()";
+2- deux erreurs dans le constructeur de coeur, les parenthèses dans class CorpsHumain(), et new Coeurs avec un s sauf qu'il n'y en a pas dans le nom de la classe.
+3- Le constructeur
+4- Elle sert à attribuer une valeur aux propriétés de la classe.
+5- Abstract signifie que l'on déclare une classe abstraite. Elle ne pourra pas être instanciée.
+6- Ca sert a forcé l'enfant à définir une fonction correspondant à la méthode abstraite créer dans le parent. Une méthode abstraite n'a pas de code interne, c'est l'enfant qui le définis.

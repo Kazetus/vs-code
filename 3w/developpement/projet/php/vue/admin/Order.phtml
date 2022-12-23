@@ -1,0 +1,35 @@
+<section>
+    <h2>All Orders</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Order N°</th>
+                <th>Details</th>
+                <th>Total</th>
+                <th>Client</th>
+                <th>Adresse</th>
+                <th>Tel</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach($orders as $order) : ?>
+            <?php $total = 0;?>
+                <tr>
+                    <th><?=$order['ID_order']?></th>
+                    <th>
+                    <?php foreach($details as $detail) : ?>
+                        <?php if($order['ID_order'] === $detail['ID_order']) : ?>
+                            <p><?=$detail['dishName']." x ".$detail['quantity']." Price: ".$detail['unit_price']."€"?></p>
+                            <?php $total += $detail['quantity'] * $detail['unit_price']; ?>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
+                    </th>
+                    <th><?=$total?> €</th>
+                    <th><?=$order['firstName']." ".$order['lastName']?></th>
+                    <th><?=$order['adresse']." ".$order['postalCode']." ".$order['city']?></th>
+                    <th><?=$order['tel']?></th>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+</section>

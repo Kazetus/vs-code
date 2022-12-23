@@ -1,0 +1,12 @@
+canvas {
+    border: 20px ridge gold;
+    background-color: white;
+}
+body {
+    background: #8A0808;
+}
+.container {
+    margin: auto;
+    width: 1000px;
+    text-align: center;
+}

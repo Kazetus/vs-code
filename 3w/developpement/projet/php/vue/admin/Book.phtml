@@ -1,0 +1,25 @@
+<section>
+    <h1>Reservation :</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Seats</th>
+                <th>Special</th>
+                <th>Client</th>
+                <th>Contact</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach($books as $book) : ?>
+                <tr>
+                    <td><?=$book['date']?></td>
+                    <td><?=$book['seats']?> persons</td>
+                    <td><?=$book['special']?></td>
+                    <td><?=$book['firstName']?> <?=$book['lastName']?></td>
+                    <td><?=$book['tel']?></td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+</section>

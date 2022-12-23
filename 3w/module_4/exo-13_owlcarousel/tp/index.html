@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common-v3.css" type="text/css"/>
+    <link rel="stylesheet" href="ressources/owl-carousel/owl.carousel.min.css" type="text/css"/>
+    <link rel="stylesheet" href="ressources/owl-carousel/owl.theme.default.min.css" type="text/css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+</head>
+<body>
+    <header class="header">
+        <h1>Plugin jQuery Owl Carousel</h1>
+        Caroussel d'images avec le plugin jQuery Owl Carousel
+    </header>
+    <div class="container">
+        <main>
+            <article>
+                <h2>Owl Carousel</h2>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <a data-fancybox="gallery" href="ressources/images/hollywood1.jpg">
+                            <img src="ressources/images/hollywood1.jpg" alt="photo hollywood"/>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a data-fancybox="gallery" href="ressources/images/hollywood2.jpg">
+                            <img src="ressources/images/hollywood2.jpg" alt="photo hollywood"/>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a data-fancybox="gallery" href="ressources/images/hollywood3.jpg">
+                            <img src="ressources/images/hollywood3.jpg" alt="photo hollywood"/>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a data-fancybox="gallery" href="ressources/images/hollywood4.jpg">
+                            <img src="ressources/images/hollywood4.jpg" alt="photo hollywood"/>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a data-fancybox="gallery" href="ressources/images/hollywood5.jpg">
+                            <img src="ressources/images/hollywood5.jpg" alt="photo hollywood"/>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a data-fancybox="gallery" href="ressources/images/hollywood6.jpg">
+                            <img src="ressources/images/hollywood6.jpg" alt="photo hollywood"/>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a data-fancybox="gallery" href="ressources/images/hollywood7.jpg">
+                            <img src="ressources/images/hollywood7.jpg" alt="photo hollywood"/>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+    <footer class="footer">
+        <p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img class="copy" alt="Propriété de la 3W Academy" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png"></a></p>
+	    <p>Ce matériel pédagogique est la propriété de la <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par <a href="Catherine Denos">Catherine Denos</a>.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="ressources/owl-carousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+        $('[data-fancybox]').fancybox({
+      loop:true,
+	buttons: [
+    "zoom",
+    //"share",
+    "slideShow",
+    //"fullScreen",
+    //"download",
+    "thumbs",
+    "close"
+  ],
+});
+    </script>
+</body>
+</html>

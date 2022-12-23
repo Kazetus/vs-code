@@ -1,0 +1,63 @@
+body {
+    background-color: darkgrey;
+}
+.container {
+    margin: auto;
+    max-width:1000px;
+}
+form {
+    text-align:center;
+    margin: auto;
+    padding: 1em;
+    width: 60%;
+}
+input, label, select {
+    margin: 1em;
+}
+input {
+    width: 70%;
+}
+label {
+    width: 30%;
+}
+div {
+    margin: 2em;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+form {
+    background-color: #ede3db;
+}
+form div {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+}
+li {
+    margin: 1em;
+}
+#carnet {
+    width: fit-content;
+    background-color: silver;
+    padding: 1em;
+}
+#contact {
+    width: fit-content;
+    background-color: #BABABA;
+    padding: 1em;
+}
+#modify {
+    color: #346F01;
+}
+#delete {
+    color: red;
+}
+button {
+    padding: 1em;
+    margin: auto;
+    font-size: 15px;
+}

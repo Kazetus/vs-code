@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Faire une fenêtre modale, utilisation des propriétés position, animation et de JavaScript">
+	<title>Fenêtre modale</title>
+	<link rel="stylesheet" href="css/common-v3.css">
+	<link rel="stylesheet" href="css/theme.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<h1>Fenêtre modale</h1>
+		<p>Faire une fenêtre modale, utilisation des propriétés position, animation et de JavaScript</p>
+	</header>
+
+	<main class="container">
+
+		<article>
+			<h2>Cliquer sur le bouton pour ouvrir une fenêtre modale</h2>
+			<p><button id="open" class="button" type="button">Afficher</button></p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit corrupti cumque minus officiis repudiandae eos quis nobis repellat magni harum commodi fugit, facere neque sint ducimus, similique repellendus sapiente cupiditate.</p>
+			<p>Asperiores cum, optio adipisci deleniti ratione quasi sunt autem beatae fugit voluptates ducimus, accusantium debitis amet soluta numquam. Harum nam error quod. Neque, praesentium dolorem vel excepturi nesciunt sequi ut.</p>
+			<p>Vero optio laboriosam repudiandae necessitatibus dolorem obcaecati omnis architecto non quia. Veritatis illum repudiandae quae vitae facere aut ad, consequatur explicabo cum, quam aliquam, eveniet fugit laboriosam tempora accusantium eligendi.</p>
+			<p>Incidunt quae modi minima atque, quasi necessitatibus in fugit eligendi aperiam cupiditate, perferendis accusamus unde voluptatum iusto debitis, provident reprehenderit dolore. Iure voluptates vero itaque, dolor aut omnis mollitia magni.</p>
+			<p>Iste voluptas tenetur illo doloribus vitae perspiciatis vel eveniet ullam culpa pariatur? Repudiandae non veniam quia sint ullam voluptate nam earum quis ab a voluptates mollitia perspiciatis expedita, similique error.</p>
+			<div id="overlay" class="overlay"></div>
+			<div id="modal" class="modal">
+				<h2>Hello!</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus vel hic iure magnam possimus in molestiae recusandae labore neque, explicabo veniam libero suscipit aspernatur ea, illum accusamus earum maxime dolorem amet, reiciendis. Ea, ipsum. Quis ab cumque cum libero mollitia dicta itaque ad reprehenderit placeat quos, facere possimus aperiam adipisci, consequuntur, exercitationem iste minima saepe voluptatibus neque sunt laboriosam. Accusantium cumque facilis laudantium necessitatibus vero ad, rerum in porro, saepe aperiam repudiandae eos, maxime dolorum perferendis? Obcaecati incidunt, vitae quaerat quisquam temporibus iure sequi a. Delectus quas dignissimos aperiam reiciendis, ipsum, doloremque doloribus quia itaque, quasi distinctio incidunt nesciunt esse.</p>
+				<p><button id="close" class="button" type="button">Fermer</button></p>
+			</div>
+		</article>
+
+	</main>
+
+	<footer class="footer">
+		<p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png"></a></p>
+		<p>Ce matériel pédagogique est la propriété de la <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par Stephane Pereck.</p>
+	</footer>
+
+	<script>
+		// Elements
+		let overlay = document.getElementById('overlay');
+		let modal = document.getElementById('modal');
+		let open = document.getElementById('open');
+		let close = document.getElementById('close');
+
+		// Open
+		open.addEventListener('click', function (e) {
+			overlay.classList.add('visible');
+			modal.classList.add('visible');
+		});
+
+		// Close
+		close.addEventListener('click', function (e) {
+			overlay.classList.remove('visible');
+			modal.classList.remove('visible');
+		});
+	</script>
+
+</body>
+
+</html>

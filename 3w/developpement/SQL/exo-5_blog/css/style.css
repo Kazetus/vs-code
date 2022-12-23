@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+}
+html {
+	font-size: 62.5%; /* 1rem = 10px (la formule est 10/16*100) la taille par défaut étant 16px */
+}
+
+body {
+	font-size: 1.6rem; /* on remets la taille du texte par défaut pour le body à 16px en utilisant les rem comme unité) */
+}
+/* ////////////////////////////////////////////////////////// */
+.head {
+    color: #FED656;
+    padding: 1em;
+    padding-top: 4em;
+    font-size: 1.8rem;
+    font-weight: Bold;
+}
+
+.right {
+    text-align: right;
+}
+.title {
+    text-align: center;
+    font-size: 4rem;
+    text-shadow: 0 2px 0 black;
+    font-weight: Bold;
+}
+.button {
+    margin: 0.5em;
+    border: 0;
+    padding: 0.5em;
+}
+
+.articles {
+    border-bottom: 2px solid grey;
+}
+
+.btn-valid {
+    background-color: green;
+    color: white;
+}
+.btn-cancel {
+    background-color: orangered;
+}
+.button-mid {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.card {
+    width: 100%;
+    border-bottom: 1px solid gray;
+    width: 50%;
+    margin: 1em auto;
+}
+.notflex {
+    display: block;
+    width: 70%;
+}
+.notflex *{
+    margin: 0;
+}
+.adding {
+    width: 100%;
+    margin-bottom: 1em;
+}
+.fa-pen-to-square {
+    color: green;
+}
+.fa-trash {
+    color: red;
+}
+#delete {
+    width: fit-content;
+}
+#askdelete {
+    width: fit-content;
+}
+.row {
+    flex-wrap: nowrap;
+    margin-left: 0;
+    margin-right: 0;
+}
+/* //////////////////////////////////////////////////////////// */
+header {
+    background-image: url('../img/banniere.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+a {
+    color: #FED656;
+    text-decoration: none;
+}
+a:hover {
+    color: #FED656;
+    text-decoration: none;
+}
+a:focus {
+    color: #FED656;
+    text-decoration: none;
+}
+fieldset {
+    border: 2px solid #FED656;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+em {
+    font-size: 1.3rem;
+    font-style: Italic;
+}
+article {
+    padding: 1em;
+    margin: 1em;
+    box-shadow: 0 0 10px black;
+}
+h1 {
+    text-align: center;
+}
+input {
+    width: 75%;
+}
+textarea {
+    width: 75%;
+    vertical-align: top;
+    resize: vertical;
+}
+label {
+    width: 21%;
+}
+label, input, textearea {
+    margin: 1em 0;
+}
+table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: auto;
+}
+th {
+    border: 1px dashed red;
+    padding: 1em;
+}
+td {
+    border: 1px dashed blue;
+    padding: 1em;
+}
+thead tr {
+    background-color: grey;
+}
+tr:nth-child(even) {
+    background-color: white;
+}
+legend {
+    width: fit-content;
+    padding: 0 0.5em;
+    color: #FED656;
+}
+.head a{
+    text-shadow: 2px 2px 2px black;
+}
+img {
+    max-width: 50%;
+    float: right;
+}
+.miniature {
+    max-width: 100%;
+    float: left;
+    margin-right: 1em;
+}
+.btn {
+    font-size: 1.6rem;
+}
+.commenttitle{
+    font-size: 2rem;
+    font-weight: Bold;
+}
+.commentuser{
+    font-weight: Bold;
+}
+.commentdate{
+    font-size: 1.2rem;
+    font-style: Italic;
+}
+.lastcomment {
+    box-shadow: 0 0 10px black;
+    max-height: 450px;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-bottom: 0;
+    padding: 0.5em;
+}
+aside div {
+    border-bottom: 1px dashed gray;
+}
+.searchbar input {
+    width: 50%;
+}
+.searchbar label {
+    width: max-content;
+}

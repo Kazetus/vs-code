@@ -1,0 +1,16 @@
+.containpara {
+    max-width: 1100px;
+    background-color: white;
+    margin: auto;
+    padding: 1em;
+    color: black;
+}
+.numberpara {
+    max-width: 50%;
+    margin: auto;
+}
+main {
+    max-width: 1400px;
+    margin: auto;
+    color: silver;
+}

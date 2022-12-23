@@ -1,0 +1,85 @@
+.flex {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+.test2 {
+    flex-direction: row-reverse;
+}
+.test3 {
+    flex-direction: column;
+}
+.test3b {
+    flex-direction: column-reverse;
+}
+.test4 {
+    flex-wrap: nowrap;
+    max-width: 25%;
+}
+.test5 {
+    flex-wrap: wrap;
+    max-width: 25%;
+}
+.test6 {
+    align-items: center;
+}
+.test7 {
+    align-items: flex-start;
+}
+.test8 {
+    align-items: flex-end;
+}
+.test9 {
+    justify-content: center;
+}
+.test10 {
+    justify-content: flex-start;
+}
+.test11 {
+    justify-content: flex-end;
+}
+.test12 {
+    justify-content: space-between;
+}
+.test13 {
+    justify-content: space-around;
+}
+.test14 {
+    justify-content: space-evenly;
+}
+.un {
+    order: 1;
+}
+.deux {
+    order: 2;
+}
+.trois {
+    order: 3;
+}
+.quatre {
+    order: 4;
+}
+.cinq {
+    order: 5;
+}
+.six {
+    order: 6;
+}
+.grow {
+    flex-grow: 1;
+}
+.grow2 {
+    flex-grow: 2;
+}
+.shrink {
+    flex-shrink: 1;
+    width: 200px;
+}
+.big {
+    height: 150px;
+}
+.final {
+    margin: 15px;
+    width: 200px;
+}
+/* Balises */

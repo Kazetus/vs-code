@@ -1,0 +1,197 @@
+/* ******************************
+Classes 
+***********************************/
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+.flex {
+    display: flex;
+}
+.around {
+    justify-content: space-around;
+}
+.bet {
+    justify-content: space-between;
+}
+.header {
+    background-color: white;
+    text-align: center;
+}
+.title {
+    font-weight: normal;
+    line-height: 1.5em;
+}
+.footer {
+    background-color: #40CCEA;
+    text-align: center;
+}
+.img {
+    width: 60px;
+}
+.left {
+    float: left;
+}
+.margleft {
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
+.right {
+    float: right;
+}
+.margright{
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+.under {
+    border-bottom: 1px solid black;
+}
+.under::after {
+    content:"";
+    clear: both;
+    display: block;
+}
+.ile {
+    background-image: url("../ressources/fond.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 3em 0 2em 0;
+}
+.white {
+    width: 48%;
+    padding: 1.5em 1em;
+    margin: 0 0em 0 0;
+    background-color: white;
+}
+.link {
+    color: #40CCEA;
+}
+.world {
+    background-image: url("../ressources/map-image.png");
+    padding: 1em;
+}
+.large {
+    width: 50%;
+}
+.big {
+    font-size: 2em;
+}
+.fb {
+    color: #4267B2;
+}
+.twit {
+    color: #1da1f2;
+}
+.pint {
+    color: #bd081c;
+}
+.insta {
+    color: #8948C1;
+}
+.block {
+    display: block;
+    width: 100%;
+}
+.readmore {
+    background-color: #0096D0;
+    border-radius: 6px;
+    padding: 1em;
+    display: inline-block;
+    margin: 1em 0;
+}
+/* *******************************
+Balises
+****************************** */
+body{
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    font-family: lato, cursive;
+    box-sizing: border-box;
+}
+main {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    border-bottom: 1px dotted #40CCEA;
+    color: #40CCEA;
+    word-spacing: 10px;
+    font-size: 45px;
+    width: 90%;
+    margin: auto;
+}
+h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 25px;
+}
+nav {
+    background-color: #40CCEA;
+    width: 100%;
+    padding: 1em 0;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.footer a {
+    text-decoration: underline;
+}
+
+article {
+    margin-bottom: 25px;
+}
+address p {
+    line-height: 1;
+    margin: 2px;
+}
+address {
+    margin: 0 0 2em 0;
+}
+legend {
+    font-size: 1.6em;
+}
+button {
+    margin: auto;
+    display: block;
+    padding: 1em 2em 1em 2em;
+    background-color: #0096D0;
+    border-radius: 6px;
+    color: white;
+    border: 0px white;
+}
+label {
+    visibility: hidden;
+    display: none;
+}
+input {
+    padding: 1em;
+    margin-bottom: 1em;
+    width: 90%;
+    border-radius: 0.5em;
+    border: 0px;
+}
+textarea {
+    border: 0px;
+    border-radius: 0.5em;
+    width: 90%;
+    height: 80px;
+    padding: 1em;
+    resize: vertical;
+}
+td, th {
+    padding: 1em;
+	border: 1px solid #ddd;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+tbody tr:nth-child(odd) {
+    background-color: rgba(0,0,0,0.1);
+}

@@ -1,0 +1,29 @@
+.large {
+    display: inline-block;
+    max-width: 50%;
+    letter-spacing: normal;
+}
+.pure {
+    box-sizing: border-box;
+}
+/*.left {
+    float: left;
+}
+.right {
+    float: right;
+}*/
+.align {
+    vertical-align: top;
+}
+/*.parent::after {
+    content: " ";
+    clear: both;
+    display: block;
+}*/
+/*.flex {
+    display: flex;
+    align-items: flex-end;
+}*/
+.flex {
+    letter-spacing: -0.31em;
+}

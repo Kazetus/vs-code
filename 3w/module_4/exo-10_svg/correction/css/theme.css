@@ -1,0 +1,21 @@
+/* Le code CSS de la démo */
+.fond {
+	fill: #0bf;
+}
+line {
+    transition: transform 1s;
+}
+svg:hover line {
+    transform: scaleY(1.5);
+}
+path {
+   animation: 1s linear 0s infinite Flotte; 
+}
+@keyframes Flotte {
+    0% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(100px);
+    }
+} 

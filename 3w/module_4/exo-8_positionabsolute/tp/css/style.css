@@ -1,0 +1,121 @@
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #DD5735;
+    list-style: none;
+}
+.nav {
+    text-decoration: none;
+    color: white;
+}
+.nav:hover {
+    text-decoration: none;
+    color: white;
+}
+.footer {
+    position: fixed;
+    bottom:0;
+    left: 0; right:0;
+}
+.relative {
+    position: relative;
+    bottom: 2em;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    color: white;
+}
+.absolute {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0;
+    transition: all .4s ease;
+    cursor: pointer;
+/*    display: none;*/
+}
+/*.relative2:hover {
+    background-color: black;
+}*/
+
+
+.relative2 .img{
+    display: block;
+}
+
+
+
+.relative2:hover .absolute{
+    opacity: 1;
+}
+.relative2 {
+    position: relative;
+/*    text-align: center;*/
+/*    display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+.carte {
+    margin: auto;
+    width: max-content;
+    position: relative;
+    font-family: 'Sanchez', serif;
+    white-space: 0;
+}
+.promo {
+    position: absolute;
+    left: 0;
+    top: 200px;
+    max-width: 50%;
+    background-color: #DD5735;
+    color: white;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 1em;
+    font-weight: Bold;
+}
+.tarif {
+    font-size: 3.6rem;
+}
+.detail {
+    position:absolute;
+    top: 300px;
+    font-size: 1.4rem;
+    width: 300px;
+    background-color: orange;
+    color: #DD5735;
+    text-align: center;
+    padding: 1em;
+    padding-top: 3em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1em;
+}
+.plus {
+    align-self: flex-start;
+}
+.container {
+    margin-bottom: 210px;
+}
+li {
+    padding: 0.5em;
+}
+nav {
+    position: sticky;
+    top: 1rem;
+}
+figure {
+    margin-left: 0;
+    max-width: max-content;
+}
+strong {
+    font-weight: Bolder;        
+}

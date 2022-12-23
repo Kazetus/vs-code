@@ -1,0 +1,157 @@
+* {
+	box-sizing: border-box; /* On spécifie que la largeur (width) de chaque boîte comprend le padding et la bordure (par défaut, c'est seulement la largeur du contenu) */
+}
+
+html {
+	font-size: 62.5%; /* 1rem = 10px (la formule est 10/16*100) la taille par défaut étant 16px */
+}
+
+body {
+	font-family: 'Martel', serif;
+    font-size: 1.8rem;
+    color: firebrick;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Martel', serif;
+    font-size: 1.6rem;
+    padding-bottom: 1em;
+}
+.header__title {
+    font-size: 3rem;
+    font-weight: Bold;
+    font-family: 'Open Sans', sans-serif;
+    color: firebrick;
+}
+.header__title:hover {
+    color: firebrick;
+    text-decoration: none;
+}
+.header__display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header {
+    background-color: #fefee2;
+    border-top: 7px solid firebrick;
+}
+.footer__payment {
+    text-align: center;
+}
+.plat {
+    padding: 0;
+    border: 1px dashed firebrick;
+    margin: 0.2em;
+    max-width: 31%;
+}
+.plat p {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+.register__field {
+    border: 1px solid firebrick;
+    margin: 1em;
+    padding: 1em;
+    background-color: #fefee2;
+}
+.field__div {
+    text-align: left;
+    justify-content: center;
+    margin: 1em auto;
+}
+.field__div input, .field__div label{
+    margin: 0.5em 0;
+    background-color: #fefee2;
+}
+.field__btn {
+    background-color: firebrick;
+    color: white;
+    border: 0;
+    margin: 1em auto;
+    display: block;
+}
+.header__user {
+    display: inline;
+}
+.header__user--color {
+    color: black;
+}
+.card__message {
+    margin: auto;
+    width: fit-content;
+    background-color: #CD7171;
+    border: 2px solid firebrick;
+    padding: 1em;
+    color: black;
+}
+.form__order {
+    width: 50%;
+}
+.dish__name {
+    font-size: 2rem;
+    color: black;
+}
+.dish__price {
+    font-size: 2.1rem;
+    color: red;
+}
+.table__price {
+    text-align: right;
+}
+.nobot {
+    border: 0;
+}
+.minus {
+    border: 0;
+    background-color: blue;
+}
+.plus {
+    border: 0;
+    background-color: green;
+}
+.deleteproduct {
+    border: 0;
+    background-color: red;
+}
+.admin__menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-admin {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    font-size: 1.8rem;
+    padding: 0.5em;
+    border-radius: 0.2em;
+}
+.btn-admin:hover {
+    cursor: pointer;
+}
+footer {
+    background-color: #fefee2;
+    border-bottom: 7px solid firebrick;
+}
+img {
+    width: 100%;
+}
+legend {
+    width: auto;
+    max-width: inherit;
+    margin: 1em 2em;
+    padding: 0 1em;
+}
+th {
+    text-align: center;
+    padding: 1em;
+    border-bottom: 1px solid firebrick;
+}
+td {
+    text-align: center;
+    padding: 0.5em 1em;
+    border-bottom: 1px solid firebrick;
+}

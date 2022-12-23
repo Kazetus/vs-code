@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+  <meta charset="UTF-8">
+  <title>JS3.2 Carnet d'adresses</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css" type="text/css"/>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+  <div class="container">
+      <h1><i class="fa-solid fa-address-book"></i>Carnet d'adresses</h1>
+      <div id="contact"></div>
+      <div id="carnet">
+        
+      </div>
+      <button type="button" id="afficher"><i id="deploy" class="fa-solid fa-square-plus"></i></button><button type="button" id="clear"><i class="fa-solid fa-trash-can"></i></button>
+      <form id="form">
+        <label for="civil">Civilité :</label>
+        <select name="civil" id="civil">
+           <option value="Madame" selected>Madame</option>
+           <option value="Monsieur">Monsieur</option>
+        </select>
+        <div>
+          <label for="lastname">Nom :</label>
+          <input type="text" id="lastname" name="lastname" required>
+        </div>
+        <div>
+          <label for="firstname">Prénom :</label>
+          <input type="text" id="firstname" name="firstname" required>
+        </div>
+        <div>
+        <label for="phone">Téléphone :</label>
+        <input type="text" id="phone" pattern="tel:[0-9]{10}" placeholder="tel:XXXXXXXXXX" name="phone" required>
+        </div>
+        <button type="submit" id="getForm">Enregistrer</button>
+      </form>
+  </div>
+<script src="js/exercice1.js"></script>
+</body>
+</html>

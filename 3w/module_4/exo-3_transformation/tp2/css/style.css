@@ -1,0 +1,30 @@
+.article {
+    background-color: white;
+    text-align: center;
+    padding: 3em;
+}
+.move {
+    border: 7px solid #DD5735;
+    padding: 1em;
+    border-radius: 100%;
+    width: max-content;
+    margin: auto;
+    padding-bottom: 0.5em;
+    color: #DD5735;
+    position: relative;
+}
+span {
+    position: absolute;
+    bottom: 15%;
+    left: 42%;
+    z-index: 1;
+    font-weight: Bold;
+}
+.zoom:hover {
+    animation: zoomOut 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes zoomOut {
+    0% { transform: scale(1); }
+    100% {transform: scale(0.5);}
+}

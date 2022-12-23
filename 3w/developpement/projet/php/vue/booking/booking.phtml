@@ -1,0 +1,18 @@
+<section>
+    <h1><i class="fa-solid fa-utensils"></i> Booking a table</h1>
+    <form action="index.php?action=book" method="POST">
+        <fieldset class="register__field"><legend>Informations :</legend>
+            <div class="row field__div">
+                <label class="col-3" for="date">Booking date :</label>
+                <input class="col-3" type="date" id="date" name="date"/>
+                <label class="col-3" for="hours"> at :</label>
+                <input class="col-3" type="time" id="hours" name="hours"/>
+                <label class="col-3" for="seats">Seats :</label>
+                <input class="col-9" type="number" id="seats" name="seats"/>
+                <label class="col-3" for="special">Special occasion ?(Optionnal)</label>
+                <textarea class="col-9" id="special" name="special"></textarea>
+            </div>
+                <button type="submit" class="btn btn-success field__btn">BOOK !</button>
+        </fieldset>
+    </form>
+</section>

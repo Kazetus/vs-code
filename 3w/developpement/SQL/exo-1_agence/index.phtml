@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon agence de voyage</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body>
+    <h1>Agence de voyage</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID_reservation</th>
+                <th>N_vol</th>
+                <th>Heure</th>
+                <th>Destination</th>
+                <th>Nom du client</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($reservations as $reservation) : ?>
+            <tr>
+                <td><a href="detail.php?id_resa=<?=$reservation['ID_reservation']?>"><?= $reservation["ID_reservation"] ?></a></td>
+                <td><?= $reservation["N_vol"] ?></td>
+                <td><?= $reservation["Heure"] ?></td>
+                <td><?= $reservation["Destination"] ?></td>
+                <td><a href="detail_client.php?id_client=<?=$reservation['ID_client']?>"><?= $reservation["nom"]?> <?= $reservation["prenom"] ?></a></td>
+            </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+</body>
+</html>

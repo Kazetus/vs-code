@@ -1,0 +1,27 @@
+<form action="index.php?action=create_account" method="POST">
+    <fieldset class="register__field"><legend>Personnal information :</legend>
+        <div class="row field__div">
+            <label class="col-3" for="lastName">Last Name</label>
+            <input class="col-9" type="text" id="lastName" name="lastName"/>
+            <label class="col-3" for="firstName col-6">First Name</label>
+            <input class="col-9" type="text" id="firstName" name="firstName"/>
+            <label class="col-3" for="adresse">address</label>
+            <input class="col-9" type="text" id="adresse" name="adresse"/>
+            <label class="col-3" for="postal">Postal Code</label>
+            <input class="col-9" type="text" id="postal" name="postal"/>
+            <label class="col-3" for="city">City</label>
+            <input class="col-9" type="text" id="city" name="city"/>
+            <label class="col-3" for="phone">Phone</label>
+            <input class="col-9" type="text" id="phone" name="phone"/>
+        </div>
+    </fieldset>
+    <fieldset class="register__field"><legend>Login information :</legend>
+        <div class="row field__div">
+            <label class="col-3" for="mail">Mail</label>
+            <input class="col-9" type="mail" id="mail" name="mail"/>
+            <label class="col-3" for="password">password</label>
+            <input class="col-9" type="password" id="password" name="password"/>
+        </div>
+        <button class="field__btn" type="submit">Send</button>
+    </fieldset>
+</form>

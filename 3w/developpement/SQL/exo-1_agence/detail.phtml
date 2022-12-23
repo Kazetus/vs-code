@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>La page détails voyage</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body>
+    
+    <h1>Les détails de la réservation N° <?= $id ?></h1>
+    <a href="index.php">Accueil</a>
+    
+    <h2> les infos du client </h2>
+    <ul>
+        <li>nom : <?= $detail_voyage["nom"] ?></li>
+        <li>prénom : <?= $detail_voyage["prenom"] ?></li>
+        <li>tel:<?= $detail_voyage["tel"] ?> </li>
+        <li>mail: <?= $detail_voyage["mail"] ?></li>
+    </ul>
+    <h1>le détail de la réservation </h1>
+    <table>
+        <thead>
+            <tr>
+                <th>N° réservation</th>
+                <th>N° vol</th>
+                <th>Date et Heure du vol</th>
+                <th>Destination </th>
+                <th>Avion</th>
+                <th>Classe du vol</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><?= $detail_voyage["ID_reservation"] ?></td>
+                <td><?= $detail_voyage["N_vol"] ?> </td>
+                <td><?= $detail_voyage["Heure"] ?> </td>
+                <td><?= $detail_voyage["Destination"] ?> </td>
+                <td><?= $detail_voyage["Avion"] ?></td>
+                <td><?= $detail_voyage["classVol"] ?></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

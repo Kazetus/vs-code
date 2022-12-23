@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common-v3.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+</head>
+<body>
+    <header class="header">
+        <h1>Intégrer des médias en HTML</h1>
+        Utilisation de services tiers et des éléments AUDIO, VIDEO pour intégrer des sons et des vidéos
+    </header>
+    <div class="container">
+        <main>
+            <article>
+                <h2>La dernière conférence de Lea Verou (sur Vimeo)</h2>
+                <iframe src="https://player.vimeo.com/video/364399309?h=c31c26d632" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/364399309">Lea Verou - The Web Design Cheat Code: Using SVG to Bridge CSS&rsquo; Gaps</a> from <a href="https://vimeo.com/fronteers">Fronteers</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+            </article>
+            <article>
+                <h2> La balise video</h2>
+                <video controls poster="ressources/bunny.jpg">
+                <source src="ressources/bunny.mp4" type="video/mp4">
+                <source src="ressources/bunny.ogv" type="video/ogv">
+                Votre navigateur ne prend pas en charge les vidéos HTML5, merci d'utiliser un navigateur plus récent.
+                </video>
+                </article>
+            <article>
+                <h2>La balise audio</h2>
+                <audio controls preload="auto">
+                    <source src="ressources/space.mp3" type="audio/mp3">
+                    <source src="ressources/space.ogg" type="audio/ogg">
+                    <source src="ressources/space.wav" type="audio/wav">
+                </audio>
+            </article>
+        </main>
+    </div>
+    <footer class="footer">
+        <p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img class="copy" alt="Propriété de la 3W Academy" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png"></a></p>
+	    <p>Ce matériel pédagogique est la propriété de la <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par <a href="Catherine Denos">Catherine Denos</a>.</p>
+    </footer>
+</body>
+</html>

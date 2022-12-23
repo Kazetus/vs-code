@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshly restaurant Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Athiti&family=Merienda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="ressources/images/favicon.png" />
+    <link rel="stylesheet" href="css/normalize.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/contact.css" type="text/css"/>
+</head>
+<body>
+    <header class="header">
+        <div class="container flexnav">
+            <div class="title">
+                <a href="home.html" class="logo">
+                <img src="ressources/images/logo.png" alt="logo"/>
+                <p class="sitename">Freshly restaurant</p>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="navbutton" href="home.html">Home</a></li>
+                    <li><a class="navbutton" href="about.html">About</a></li>
+                    <li><a class="navbutton" href="menu.html">Menus</a></li>
+                    <li><a class="navbutton navactive" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <main>
+            <article>
+                <h1>Contact us</h1>
+                <p>If you want to make a reservation, please complete this form.</p>
+                <p class="smallitalic">Fields with <span class="asterisk">*</span> are required</p>
+                <form>
+                    <div class="flexfield">
+                        <div class="content">
+                            <p><strong>Reservation</strong></p>
+                            <label class="required" for="date">Date</label>
+                            <input type="date" id="date" name="date" required/>
+                            <label class="required" for="time">Time</label>
+                            <input type="time" min="19:00" max="21:00" id="time" name="time" required/>
+                            <label class="required" for="number">Number of guests</label>
+                            <input type="number" id="number" name="number"/>
+                        </div>
+                        <div class="content">
+                            <p><strong>Details</strong></p>
+                            <label class="required" for="name">Name</label>
+                            <input type="text" id="name" name="name" required/>
+                            <label for="mail">Email</label>
+                            <input type="email" id="mail" name="mail"/>
+                            <label class="required" for="phone">Telephone</label>
+                            <input type="tel" id="phone" name="phone"/>
+                        </div>
+                    </div>
+                    <div>
+                        <p><strong>Further request</strong></p>
+                        <textarea></textarea>
+                    </div>
+                    <button>Reserve</button>
+                </form>
+                <h2>Our location</h2>
+                <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-74.00295138359071%2C40.73340112925858%2C-73.99847209453584%2C40.73519373021776&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/40.73430/-74.00071">Afficher une carte plus grande</a></small>
+            </article>
+        </main>
+    </div>
+    <footer class="footer">
+        <div>
+            <p class="footertitle">Opening hours</p>
+            <ul>
+                <li>Monday: Closed</li>
+                <li>Tue-Wed : 9am - 10pm</li>
+                <li> Thu-Fri : 9am - 10pm</li>
+                <li>Sat-Sun : 5pm - 10pm</li>
+            </ul>
+        </div>
+        <div>
+           <p class="footertitle">Contact</p>
+            <p>13 Christopher Street</p>
+            <p>New York,</p>
+            <p>Ny 10014-3543</p>
+            <p>+01 2000 800 9999</p>
+        </div>
+        <div>
+            <p class="footertitle">Social networks</p>
+            <a href="facebook.com"><i class="fa-brands fa-facebook-f"></i></a><a href="instagram.com"><i class="fa-brands fa-instagram"></i></a><a href="Pinterest.com"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+    </footer>
+    <footer class="footer3wa">
+        <p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img class="copy" alt="Propriété de la 3W Academy" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png"></a></p>
+        <p>Cet exercice de 3W Academy est mis à disposition <span id="underfoot">pour l'usage personnel des étudiants. Pas de Rediffusion - Attribution - Pas d'Utilisation Commerciale - Pas de Modification - International.</span></p>
+        <p>Les autorisations au-delà du champ de cette licence peuvent être obtenues auprès de <a rel="license" href="mailto:contact@3wa.fr">contact@3wa.fr</a>. Les maquettes ont été réalisées par <a href="Catherine Denos">Catherine Denos</a>.</p>
+    </footer>
+</body>
+</html>

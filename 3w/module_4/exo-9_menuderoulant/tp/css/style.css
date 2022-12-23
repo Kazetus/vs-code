@@ -1,0 +1,81 @@
+ul {
+    color: white;
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    margin: auto;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+nav {
+    background-color: #3B3A39;
+}
+.flexnav {
+    display: flex;
+    justify-content: center;
+}
+.firstmenu {
+    position: relative;
+    padding: 1em 2em;
+    margin: 0 2em;
+}
+.secondmenu {
+    position: absolute;
+    background-color: #3B3A39;
+    left: 0;
+    bottom: 0;
+    padding: 1em 2em;
+    width: 100%;
+    transition: all 0.5s;
+    white-space: nowrap;
+}
+li ul{
+    visibility: hidden;
+}
+.firstmenu:hover .nav1 {
+    visibility: visible;
+}
+.secondmenu:hover{
+    background-color: #DD5735;
+}
+.firstmenu:hover ul li:first-child{
+    transform: translateY(56px);
+}
+.firstmenu:hover ul li:nth-child(2){
+    transform: translateY(112px);
+}
+.firstmenu:hover ul li:nth-child(3){
+    transform: translateY(168px);
+}
+.firstmenu:hover ul li:nth-child(4){
+    transform: translateY(224px);
+}
+.firstmenu:hover ul li:nth-child(5){
+    transform: translateY(280px);
+}
+.nav2 {
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+.thirdmenu {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    padding: 1em 2em;
+}
+.target:hover .nav2 {
+    visibility: visible;
+}
+.thirdmenu {
+    background-color: #3B3A39;
+}
+.thirdmenu:hover {
+    background-color: #DD5735;
+}

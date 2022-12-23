@@ -1,0 +1,11 @@
+canvas {
+    background-color: silver;
+}
+body {
+    background-color: darkgrey;
+}
+.container {
+    margin: auto;
+    max-width:1000px;
+    text-align:center;
+}

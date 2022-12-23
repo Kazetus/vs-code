@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>La page détails voyage</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body>
+    
+    <h1>Les détails du client N°: <?= $id ?></h1>
+    <a href="index.php">Accueil</a>
+    
+    <h2> les infos du client </h2>
+    <ul>
+        <li>nom : <?= $detail_clients[0]["nom"] ?></li>
+        <li>prénom : <?= $detail_clients[0]["prenom"] ?></li>
+        <li>tel:<?= $detail_clients[0]["tel"] ?> </li>
+        <li>mail: <?= $detail_clients[0]["mail"] ?></li>
+    </ul>
+    <h1>le détail de ses réservations </h1>
+    <table>
+        <thead>
+            <tr>
+                <th>N° réservation</th>
+                <th>N° vol</th>
+                <th>Date et Heure du vol</th>
+                <th>Destination </th>
+                <th>Avion</th>
+                <th>Classe du vol</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($detail_clients as $detail_client) : ?>
+            <tr>
+                <td><?= $detail_client["ID_reservation"] ?></td>
+                <td><?= $detail_client["N_vol"] ?> </td>
+                <td><?= $detail_client["Heure"] ?> </td>
+                <td><?= $detail_client["Destination"] ?> </td>
+                <td><?= $detail_client["Avion"] ?></td>
+                <td><?= $detail_client["classVol"] ?></td>
+            </tr>
+            <?php endforeach ?>
+        </tbody>
+    </table>
+</body>
+</html>

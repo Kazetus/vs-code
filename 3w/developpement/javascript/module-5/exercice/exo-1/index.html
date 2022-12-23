@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+  <meta charset="UTF-8">
+  <title>JS5.1 VUE</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css"/>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<!--  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>-->
+</head>
+<body>
+  <div class="container">
+    <div id="app">
+      <h1>Liste des concerts</h1>
+      <ul>
+        <li v-for="item in concert">{{ item.titre }}</li>
+      </ul>
+      <article>
+        <h2>Détail des concerts</h2>
+        <div class= "flex">
+          <ul class="card" v-for="item in concert">
+            <img :src="item.image"/>
+            <div>
+              <li v-for="value in item">{{ value }}</li>
+            </div>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </div>
+<script src="js/exercice3.js"></script>
+</body>
+</html>

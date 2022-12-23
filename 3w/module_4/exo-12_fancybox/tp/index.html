@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common-v3.css" type="text/css"/>
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+</head>
+<body>
+    <header class="header">
+        <h1>Plugin jQuery</h1>
+        Galerie d'images avec le plugin jQuery Fancy Box
+    </header>
+    <div class="container">
+        <main>
+            <article>
+                <h2>Fancy Box</h2>
+                <div class="flex">
+                <a data-fancybox="gallery" href="images/abstract1-grand.jpg">
+                    <img src="images/abstract1-vignette.jpg" alt="art abstrait"/>
+                </a>
+                <a data-fancybox="gallery" href="images/abstract2-grand.jpg">
+                    <img src="images/abstract2-vignette.jpg" alt="art abstrait"/>
+                </a>
+                <a data-fancybox="gallery" href="images/nature1-grand.jpg">
+                    <img src="images/nature1-vignette.jpg" alt="photo nature"/>
+                </a>
+                <a data-fancybox="gallery" href="images/nature2-grand.jpg">
+                    <img src="images/nature2-vignette.jpg" alt="photo nature"/>
+                </a>
+                <a data-fancybox="gallery" href="images/nature3-grand.jpg">
+                    <img src="images/nature3-vignette.jpg" alt="photo nature"/>
+                </a>
+                <a data-fancybox="gallery" href="images/tech1-grand.jpg">
+                    <img src="images/tech1-vignette.jpg" alt="photo tech"/>
+                </a>
+                <a data-fancybox="gallery" href="images/tech2-grand.jpg">
+                    <img src="images/tech2-vignette.jpg" alt="photo tech"/>
+                </a>
+                <a data-fancybox="gallery" href="images/tech3-grand.jpg">
+                    <img src="images/tech3-vignette.jpg" alt="photo tech"/>
+                </a>
+                </div>
+            </article>
+        </main>
+    </div>
+    <footer class="footer">
+        <p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img class="copy" alt="Propriété de la 3W Academy" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png"></a></p>
+	    <p>Ce matériel pédagogique est la propriété de la <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par <a href="Catherine Denos">Catherine Denos</a>.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="fancybox/jquery.fancybox.min.js"></script>
+    
+    <script>
+    	$('[data-fancybox="gallery"]').fancybox({
+    		loop: true,
+    		buttons: [
+    			"zoom",
+    			//"share",
+    			"slideShow",
+    			//"fullScreen",
+    			//"download",
+    			"thumbs",
+    			"close",
+    		],
+    		// Transition effect between slides
+    		//
+    		// Possible values:
+    		//   false            - disable
+    		//   "fade'
+    		//   "slide'
+    		//   "circular'
+    		//   "tube'
+    		//   "zoom-in-out'
+    		//   "rotate'
+    		//
+    		transitionEffect: "tube",
+    	});
+    </script>
+    
+</body>
+</html>

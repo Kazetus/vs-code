@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshly restaurant Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Athiti&family=Merienda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="ressources/images/favicon.png" />
+    <link rel="stylesheet" href="css/normalize.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/menu.css" type="text/css"/>
+</head>
+<body>
+    <header class="header">
+        <div class="container flexnav">
+            <div class="title">
+                <a href="home.html" class="logo">
+                <img src="ressources/images/logo.png" alt="logo"/>
+                <p class="sitename">Freshly restaurant</p>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="navbutton" href="home.html">Home</a></li>
+                    <li><a class="navbutton" href="about.html">About</a></li>
+                    <li><a class="navbutton navactive" href="menu.html">Menus</a></li>
+                    <li><a class="navbutton" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <main>
+            <article class="menucontainer">
+                <h1>Details of our menus</h1>
+                <p>Choose your main course according to your menu!</p>
+                <div class="navmix">
+                    <button type="button" data-filter="all">All</button>
+                    <button type="button" data-filter=".category-meat">Meat</button>
+                    <button type="button" data-filter=".category-vegan">Vegan</button>
+                    <button type="button" data-filter=".category-fish">Fish</button>
+                </div>
+                <div class="menumix menuflex">
+                    <div class="mix flexwidth category-fish" data-order="1">
+                        <figure>
+                            <img src="ressources/menus/fish-01.jpg" alt="Grilled mussels"/>
+                            <figcaption><div>Grilled mussels</div></figcaption>
+                        </figure>
+                    </div>
+                    <div class="mix flexwidth category-vegan" data-order="2">
+                        <figure>
+                            <img src="ressources/menus/vegan-03.jpg" alt="Mixed vegetables"/>
+                            <figcaption><div>Mixed vegetables</div></figcaption>
+                        </figure>
+                    </div>
+                    <div class="mix flexwidth category-meat" data-order="3">
+                        <figure>
+                            <img src="ressources/menus/meat-03.jpg" alt="Freshly kebabs"/>
+                            <figcaption><div>Freshly kebabs</div></figcaption>
+                        </figure>
+                    </div>
+                    <div class="mix flexwidth category-fish" data-order="4">
+                        <figure>
+                            <img src="ressources/menus/fish-02.jpg" alt="Cajun shrimp"/>
+                            <figcaption><div>Cajun shrimp</div></figcaption>
+                        </figure>
+                    </div>
+                    <div class="mix flexwidth category-meat" data-order="5">
+                        <figure>
+                            <img src="ressources/menus/meat-01.jpg" alt="Freshly burger"/>
+                            <figcaption><div>Freshly burger</div></figcaption>
+                        </figure>
+                    </div>
+                    <div class="mix flexwidth category-vegan" data-order="6">
+                        <figure>
+                            <img src="ressources/menus/vegan-02.jpg" alt="Grilled eggplants"/>
+                            <figcaption><div>Grilled eggplants</div></figcaption>
+                        </figure>
+                    </div>
+                    <div class="mix flexwidth category-meat" data-order="7">
+                        <figure>
+                            <img src="ressources/menus/meat-02.jpg" alt="Beef stew with pasta"/>
+                            <figcaption><div>Beef stew with pasta</div></figcaption>
+                        </figure>
+                    </div>
+                    <div class="mix flexwidth category-fish" data-order="8">
+                        <figure>
+                            <img src="ressources/menus/fish-03.jpg" alt="Grilled salmon"/>
+                            <figcaption><div>Grilled salmon</div></figcaption>
+                        </figure>
+                    </div>
+                    <div class="mix flexwidth category-vegan" data-order="9">
+                        <figure>
+                            <img src="ressources/menus/vegan-01.jpg" alt="Vegetable Jambalaya"/>
+                            <figcaption><div>Vegetable Jambalaya</div></figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </article>
+            <article class="menucontainer">
+                <h1>Desserts</h1>
+                <p>Choose your main course according to your menu!</p>
+                <div class="menuflex">
+                    <div class="flexwidth">
+                        <figure>
+                            <img src="ressources/menus/desert-01.jpg" alt="Tiramisu"/>
+                            <figcaption><div>Tiramisu</div></figcaption>
+                        </figure>
+                    </div>
+                    <div class="flexwidth">
+                        <figure>
+                            <img src="ressources/menus/desert-02.jpg" alt="Freshly Pancakes"/>
+                            <figcaption><div>Freshly Pancakes</div></figcaption>
+                        </figure>
+                    </div>
+                    <div class="flexwidth">
+                        <figure>
+                            <img src="ressources/menus/desert-03.jpg" alt="Redberries cup"/>
+                            <figcaption><div>Redberries cup</div></figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </article>
+            <article class="menucontainer">
+                <h1>Cocktails</h1>
+                <p>Choose your main course according to your menu!</p>
+                <div class="menuflex">
+                    <div class="flexwidth">
+                        <figure>
+                            <img src="ressources/menus/drink-01.jpg" alt="Winter Whiskey"/>
+                            <figcaption><div>Winter Whiskey</div></figcaption>
+                        </figure>
+                    </div>
+                    <div class="flexwidth">
+                        <figure>
+                            <img src="ressources/menus/drink-02.jpg" alt="Paloma cocktail"/>
+                            <figcaption><div>Paloma cocktail</div></figcaption>
+                        </figure>
+                    </div>
+                    <div class="flexwidth">
+                        <figure>
+                            <img src="ressources/menus/drink-03.jpg" alt="Bellini cocktail"/>
+                            <figcaption><div>Bellini cocktail</div></figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+    <footer class="footer">
+        <div>
+            <p class="footertitle">Opening hours</p>
+            <ul>
+                <li>Monday: Closed</li>
+                <li>Tue-Wed : 9am - 10pm</li>
+                <li> Thu-Fri : 9am - 10pm</li>
+                <li>Sat-Sun : 5pm - 10pm</li>
+            </ul>
+        </div>
+        <div>
+           <p class="footertitle">Contact</p>
+            <p>13 Christopher Street</p>
+            <p>New York,</p>
+            <p>Ny 10014-3543</p>
+            <p>+01 2000 800 9999</p>
+        </div>
+        <div>
+            <p class="footertitle">Social networks</p>
+            <a href="facebook.com"><i class="fa-brands fa-facebook-f"></i></a><a href="instagram.com"><i class="fa-brands fa-instagram"></i></a><a href="Pinterest.com"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+    </footer>
+    <footer class="footer3wa">
+        <p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img class="copy" alt="Propriété de la 3W Academy" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png"></a></p>
+        <p>Cet exercice de 3W Academy est mis à disposition <span id="underfoot">pour l'usage personnel des étudiants. Pas de Rediffusion - Attribution - Pas d'Utilisation Commerciale - Pas de Modification - International.</span></p>
+        <p>Les autorisations au-delà du champ de cette licence peuvent être obtenues auprès de <a rel="license" href="mailto:contact@3wa.fr">contact@3wa.fr</a>. Les maquettes ont été réalisées par <a href="Catherine Denos">Catherine Denos</a>.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        let mixer = mixitup('.menumix');
+    </script>
+</body>
+</html>

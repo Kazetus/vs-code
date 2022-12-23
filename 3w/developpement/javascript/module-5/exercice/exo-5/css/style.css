@@ -1,0 +1,23 @@
+thead tr td{
+    background: linear-gradient(#aaa, #fff 25%);
+}
+td {
+    padding: 0.5em 2em 0.5em 0.5em;
+    border-bottom: 1px solid #aaa;
+}
+tbody tr:nth-child(odd){
+    background-color: rgba(0,0,0,0.1);
+}
+table {
+    border-collapse: collapse;
+}
+.valid {
+    background-color: green;
+}
+.error {
+    background-color: firebrick;
+}
+.bouton {
+    color: blue;
+    cursor: pointer;
+}

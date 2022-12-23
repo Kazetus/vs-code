@@ -1,0 +1,9 @@
+<div class="row">
+    <?php foreach ($dishs as $dish) : ?>
+    <div class="plat col-4">
+    <img src="img/<?=$dish['Photos']?>" alt="<?=$dish['dishName']?>"/>
+    <p><?=$dish['dishName']?></p><p><?=$dish['Price'].'€'?></p>
+    </div>
+    <?php endforeach; ?>
+    </div>
+</div>

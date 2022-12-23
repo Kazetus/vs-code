@@ -1,0 +1,113 @@
+16--
+1)Ce sont des paramètres GET avec un nom et une valeur.
+2)$_GET['id'] et $_GET['prix']
+
+17--
+$tableau=[1,2,3,4,5];
+ Quelle est la bonne syntaxe pour que echo $total affiche 15:
+- for(var i=0;i<$tableau.length;i++){
+total+=tableau[i]; // Manque le $ devant total
+ }
+- for($i=0;$i<=count($tableau);$i++){
+ $total+=$tableau[$i]; // $i <= donc pas bon.
+ }
+-> for($i=0;$i<count($tableau);$i++){
+$total+=$tableau[$i];
+}
+- for($i=0;$i<count($tableau);$i++){
+$total=$tableau[$i];  //$total = donc pas bon.
+ }
+
+18--
+-'taille'
+
+19--
+name et action
+
+20--
+-div
+-.green
+-div.green
+
+21--
+- l'article sur lequel on a cliqué.
+
+22-
+-$_POST['data']
+
+23-
+-SELECT,JOIN,INSERT,DELETE,UPDATE
+-AVG(),COUNT(),MAX(),MIN(),SUM()
+
+24-
+<a href="#" id="order" data-id='2'>Commander</a>
+1)JS
+let link = document.getElementByID('order');
+console.log(link.dataset.id);
+
+2)Jquery
+console.log($('#order').data('id'));
+
+3)Il s'agit d'une ancre qui va diriger le lien vers la page actuelle et nous ramener en haut de celle ci.
+
+25--
+function liste() {
+    console.log($(this).data('liste'));
+}
+$('li').on('click',liste);
+
+26--
+let cart = [ 
+            {price : 150, name : "jouet"},
+            {price : 400, name : "télé"},
+            {price : 750, name : "pc"}
+             ];
+let price;
+let total = 0;
+const REDUC1 = 0.97;
+const REDUC2 = 0.95;
+for(let i=0; i<cart.length;i++) {
+    price = cart[i].price;
+    if ( price > 350 && price < 600) {
+        price *= REDUC1;
+    }
+    else if ( price >= 600) {
+        price *= REDUC2;
+    }
+    else {}
+    total += price;
+}
+console.log(total);
+
+27--
+2 types, les tableaux à index Numériques et les tableaux associatifs.
+
+27.2--
+
+Un tableau associatifs utilise un mot-clé pour stocker une valeur qui y sera liée. 
+Tandis qu'un tableau indexé va classer ses valeurs dans un ordre numérique et on y accèdera avec le bon index numérique.
+
+28--
+$chaine = "Je suis une chaîne de caractère.";
+strlen($chaine);
+
+29--
+B
+
+30--
+D
+
+31--
+A
+
+32--
+A,B,C,D,E
+
+33--
+D
+
+34--
+B
+
+35--
+B

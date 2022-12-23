@@ -1,0 +1,28 @@
+.container {
+    margin: auto;
+    max-width:1000px;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    list-style: none;
+    width: 28%;
+    border: 2px solid lightblue;
+    padding: 1em;
+    display: flex;
+}
+.card li:first-child{
+    font-weight: Bold;
+}
+li {
+    margin: 1em;
+}
+img {
+    max-width: 50%;
+}
+article {
+    border-left: 1px solid grey;
+    padding-left: 1em;
+}

@@ -1,0 +1,59 @@
+<?php if (isset($_SESSION['admin'])) : ?>
+    <?php if (isset($_GET['id_add']) && $_GET['id_add'] == 'article') : ?>
+        <section>
+            <h1>Rédiger un nouvel article</h1>
+            <form action="ajout_article.php" method="POST" enctype="multipart/form-data">
+                <fieldset class="notflex"><legend><i class="fa-solid fa-file"></i> Nouvel article</legend>
+                    <input type="hidden" name="id_add" value="article"/>
+                    <label for="title">Titre :</label>
+                    <input class="adding" type="text" name="title" id="title"/>
+                    <label for="article">Article :</label>
+                    <textarea class="adding" name="article" id="article"></textarea>
+                    <label for="image">Image :</label>
+                    <input class="adding" type="file" id="image" name="image"/>
+                    <label for="author">Auteur :</label>
+                    <select class="adding" name="author" id="author">
+                        <?php foreach($authors as $author) : ?>
+                            <option value="<?= $author['ID_author'] ?>"><?= $author['authorFirstName'] ?></option>
+                        <?php endforeach; ?>
+                    </select>
+                    <label for="categorie">categorie</label>
+                    <select class="adding" name="categorie" id="categorie">
+                        <?php foreach($categories as $categorie) : ?>
+                            <option value="<?= $categorie['ID_categorie'] ?>"><?= $categorie['categorieName'] ?></option>
+                        <?php endforeach; ?>
+                    </select>
+                    <div class="button-mid"><button type="submit" class="button btn-valid">Enregistrer</button></div>
+                </fieldset>
+            </form>
+        </section>
+    <?php elseif(isset($_GET['id_add']) && $_GET['id_add'] == 'auteur') : ?>
+        <section>
+            <h1>Ajouter un auteur</h1>
+            <form action="ajout_article.php" method="POST">
+                <fieldset class="notflex"><legend><i class="fa-solid fa-file"></i> Nouvel auteur</legend>
+                    <input type="hidden" name="id_add" value="auteur"/>
+                    <label for="firstName">Prénom :</label>
+                    <input class="adding" type="text" name="firstName" id="firstName"/>
+                    <label for="lastName">Nom de famille :</label>
+                    <input class="adding" type="text" name="lastName" id="lastName"/>
+                    <button type="submit" class="button btn-valid">Enregistrer</button>
+                </fieldset>
+            </form>
+        </section>
+    <?php elseif(isset($_GET['id_add']) && $_GET['id_add'] == 'categorie') : ?>
+        <section>
+            <h1>Ajouter un auteur</h1>
+            <form action="ajout_article.php" method="POST">
+                <fieldset class="notflex"><legend><i class="fa-solid fa-file"></i> Nouvel auteur</legend>
+                    <input type="hidden" name="id_add" value="categorie"/>
+                    <label for="categorieName">Nom de la catégorie :</label>
+                    <input class="adding" type="text" name="categorieName" id="categorieName"/>
+                    <button type="submit" class="button btn-valid">Enregistrer</button>
+                </fieldset>
+            </form>
+        </section>
+    <?php endif; ?>
+<?php else : ?>
+<?php header('location:admin.php'); ?>
+<?php endif; ?>

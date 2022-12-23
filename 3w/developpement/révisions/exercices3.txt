@@ -1,0 +1,67 @@
+36--
+
+A,D 
+
+37--
+
+B
+
+38--
+
+D
+
+39--
+
+B
+
+40--
+
+D
+
+41--
+
+-A enregistrer des données dans le navigateur sous l étiquette données
+
+42--
+
+-window.localStorage
+-window.sessionStorage
+
+43--
+
+- à faire une moyenne de plusieurs enregistrements
+
+44--
+
+- une instanciation permet de créer une nouvelle classe d objet
+- on peut réaliser autant d instanciations que l on souhaite d un m
+Bême objet
+
+
+
+46--
+
+A
+
+47--
+
+A
+
+48--
+
+Pour utiliser le polymorphisme en POO, il faut préparer plusieurs classes, définir les propriétés et les méthodes qu'elles pourraient avoir en commun et ensuite, créer une classe mère dont les autres pourraient hérité.
+Dans la classe mère, nous mettrions les propriétés communes ainsi que les méthodes communes pour définir une structure pour les classes enfants, tout en permettant aux classes enfants de déterminer comment elles utiliseraient 
+ces différentes propriétés/méthodes.
+Si on prends en exemple une classe "véhicule", nous pouvons lui attribuer les propriétés "marque", "modèle" et "terrain" et une fonction "avancer". Nous pouvons ensuite créer la classe "voiture" a qui nous pourrions attribuer 
+une marque, un modèle et le type:"terrestre", une classe "bateau" avec une marque et un modèle différent et le type "maritime". Et la fonction "avancer" réagirai différemment par rapport au type du véhicule qui
+changerai le mode de déplacement.
+
+49--
+
+margin-top: 25px;
+margin-left&right: 50px;
+margin-bottom: 75px;
+
+50--
+
+JSON, Protocol buffer et Avro ?

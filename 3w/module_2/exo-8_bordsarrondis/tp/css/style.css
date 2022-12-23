@@ -1,0 +1,40 @@
+main {
+    margin: 0 3em 0 3em;
+}
+main p {
+    background-color: white;
+}
+.cut1 {
+    border-radius: 1em;
+}
+.cut2 {
+    border-radius: 2em;
+}
+.cut3 {
+    border-top-left-radius: 2em;
+}
+.cut4 {
+    border-radius: 1em 2em 3em 4em;
+}
+.circle {
+    width: 12em;
+    height: 12em;
+    border-radius: 15em;
+    text-align: center;
+    line-height: 8em;
+}
+.color {
+    width: 12em;
+    height: 12em;
+    border-radius: 15em;
+/*      background:
+    linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);*/
+/*    background: 
+    conic-gradient(#ff00d7, #ff8bf6),
+    conic-gradient(#ff8bf6, purple),
+    conic-gradient(purple, #d16bff);*/
+    background: conic-gradient(#ff00d7 45deg, #ff8bf6 45deg 135deg, purple 135deg 225deg, 
+     #d16bff 225deg 315deg, #ff00d7 315deg 360deg);
+}

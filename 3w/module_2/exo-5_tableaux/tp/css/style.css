@@ -1,0 +1,29 @@
+.tete {
+    border-bottom: 2px solid #999;
+}
+.colle {
+    border-collapse: collapse;
+}
+.gros {
+    font-size: 2em;   
+}
+.grey {
+    background-color: rgba(0,0,0,0.1);
+}
+/* BALISES */
+td, th {
+    border: 1px solid #ddd;
+    padding: 1em;
+    font-size: 0.81em;
+}
+tfoot tr td {
+    border-top: 2px solid #999;
+}
+main {
+    margin: 15px auto;
+    background-color: white;
+    max-width: 80%;
+}
+.texte td + td + td, tfoot td {
+    text-align: right;
+}

@@ -1,0 +1,14 @@
+.article {
+    background-color: white;
+    text-align: center;
+}
+.move {
+    transform-origin: center center;
+    transform: rotate(90deg);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+.move:hover {
+    transform: rotate(0deg);
+}

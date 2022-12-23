@@ -1,0 +1,6 @@
+Ligne 2- $private, visiblement le but c'était de déclaré $color en private.
+Pas de fermeture de la classe Shape.
+Ligne 8- Une fonction abstraite toute seule en dehors d'une classe ? En plus, il n'y a pas de classe abstraite ou la mettre dans le code à la base.
+Ligne 10- shape sans majuscule contrairement à la ligne 2.
+Ligne 12- Utilisation de $this->color sans constructeur du parent et en plus, la valeur $color devant être private ne pourra être récupéré de cette manière dans l'enfant.
+-Absence d'utilisation du setColor pour définir une couleur dans l'enfant et absence de getter pour la lire.

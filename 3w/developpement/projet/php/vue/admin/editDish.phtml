@@ -1,0 +1,14 @@
+<form action="index.php?action=order" method="POST">
+    <fieldset class="register__field"><legend>Edit a dish :</legend>
+        <label for="editChoice">Product :</label>
+        <select name="editChoice" id="editChoice">
+            <option value="z">Please choose a dish.</option>
+            <?php foreach ($listdishs as $listdish) : ?>
+                <option value="<?=$listdish['ID_dish']?>"><?=$listdish['dishName']?></option>
+            <?php endforeach; ?>
+        </select>
+    </fieldset>
+</form>
+<div id="editeur">
+    
+</div>

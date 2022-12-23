@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>La page détails voyage</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Customer N° <?= $id ?></h1>
+        <a href="index.php">Order list</a>
+        <article class="right">
+            <h2> <?= $customer["customerName"] ?></h2>
+            <p class="contact"> <?= $customer["contactFirstName"] ?> <?= $customer["contactLastName"] ?> </p>
+            <p> <?= $customer["addressLine1"] ?> <?= $customer["addressLine2"]?></p>
+            <p> <?= $customer["city"] ?></p>
+        </article>
+        <article class="detail">
+            <h2>List of order from customer N° <?= $id ?></h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order number</th>
+                        <th>Order Date</th>
+                        <th>Shipped Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach($customer_orders as $customer_order) : ?>
+                    <tr>
+                        <td><a href="detail.php?id_order=<?=$customer_order['orderNumber']?>"><?= $customer_order["orderNumber"] ?></a></td>
+                        <td><?= $customer_order["orderDate"] ?></td>
+                        <td><?= $customer_order["shippedDate"] ?> </td>
+                        <td><?= $customer_order["status"] ?></td>
+                    </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+        </article>
+    </div>
+</body>
+</html>

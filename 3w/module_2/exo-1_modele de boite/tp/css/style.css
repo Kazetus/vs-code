@@ -1,0 +1,30 @@
+.box2 {
+    margin: 2em;
+}
+.box3 {
+    padding: 2em;
+}
+.box4 {
+    padding: 2em;
+    border: solid 2px;
+}
+.box5 {
+    padding: 2em;
+    margin: 2em;    
+    border: solid 2px;
+    width: 60%;
+}
+.box6 {
+    padding: 2em;
+    margin: 2em;    
+    border: solid 2px;
+    width: 60%;
+    box-sizing: border-box;
+}
+.box {
+    background-color: #CCC;
+    border-color: #DD5735;
+}
+.intro {
+    Line-height: 1.5;
+}
