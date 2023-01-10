@@ -1,0 +1,26 @@
+.title {
+    background-color: #fff;
+	padding: 1em;
+}
+article { 
+    margin: 1em 0;
+}
+.menu a{
+    padding: 1em;
+    background-color: black;
+    position: absolute;
+    left:0; top:0;
+    color: white;
+    opacity: 0;
+}
+.menu a:focus{
+    opacity: 1;
+    border: 2px solid blue;
+    border-radius: 0.5em;
+}
+.menu a:hover {
+    opacity: 1;
+    border: 2px solid blue;
+    border-radius: 0.5em;
+    text-decoration: none;
+}

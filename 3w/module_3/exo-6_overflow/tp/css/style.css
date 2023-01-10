@@ -1,0 +1,40 @@
+.test1 {
+    overflow: visible;
+}
+.test2 {
+    overflow: hidden;
+}
+.test3 {
+    overflow: scroll;
+}
+.test4 {
+    overflow: auto;
+}
+.test5 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.test6 {
+    text-overflow: " ";
+    white-space: nowrap;
+    overflow: hidden;
+}
+.large1 {
+    width: 500px;
+    height: 120px;
+    background-color: #fff;
+
+}
+.large2 {
+    width: 240px;
+    background-color: #fff;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 60%;
+    margin: auto;
+}

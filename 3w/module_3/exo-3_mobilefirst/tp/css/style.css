@@ -1,0 +1,27 @@
+.container {
+    max-width: 90%;
+}
+h2 {
+    background-color: rgba(0,0,0,0.2);
+    margin: 0;
+}
+main {
+    padding: 0 2em;
+}
+h3 {
+    margin: 0;
+}
+@media screen and (min-width: 780px) {
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .flex article{
+        width: 50%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .flex {
+        flex-wrap: nowrap;
+    }
+}

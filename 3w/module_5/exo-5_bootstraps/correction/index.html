@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Introduction à Bootstrap, premiers tests">
+	<title>Bootstrap</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/theme.css">
+</head>
+
+<body>
+
+	<header class="jumbotron text-center">
+		<h1>Bootstrap</h1>
+		<p class="lead">Introduction à Bootstrap, premiers tests</p>
+	</header>
+
+	<main class="container">
+
+		<h1>Un exemple de titre h1</h1>
+
+		<h2>Un exemple de titre h2 (avec une couleur personnalisée)</h2>
+
+		<h3>Un exemple de titre h3</h3>
+
+		<p>Un exemple de texte dans un paragraphe contenant un <a href="#">Lien vide</a> (dont l'adresse est simplement l'ancre vide #)</p>
+
+		<div class="alert alert-success">Un exemple de div ayant la classe "alert alert-success"</div>
+
+		<article class="card my-5" style="width: 18rem;">
+			<img src="img/large.jpg" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Une carte</h5>
+				<p class="card-text">Un exemple de texte dans une carte.</p>
+				<a href="#" class="btn btn-primary">Un bouton</a>
+			</div>
+		</article>
+
+		<section class="row my-5">
+			<article class="col-md-3 col-sm-6 p-2">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">Une carte</h5>
+						<p class="card-text">Un exemple de texte dans une carte.</p>
+						<a href="#" class="btn btn-primary">Un bouton</a>
+					</div>
+				</div>
+			</article>
+			<article class="col-md-3 col-sm-6 p-2">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">Une carte</h5>
+						<p class="card-text">Un exemple de texte dans une carte.</p>
+						<a href="#" class="btn btn-primary">Un bouton</a>
+					</div>
+				</div>
+			</article>
+			<article class="col-md-3 col-sm-6 p-2">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">Une carte</h5>
+						<p class="card-text">Un exemple de texte dans une carte.</p>
+						<a href="#" class="btn btn-primary">Un bouton</a>
+					</div>
+				</div>
+			</article>
+			<article class="col-md-3 col-sm-6 p-2">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">Une carte</h5>
+						<p class="card-text">Un exemple de texte dans une carte.</p>
+						<a href="#" class="btn btn-primary">Un bouton</a>
+					</div>
+				</div>
+			</article>
+		</section>
+
+		<table class="table my-5">
+			<thead>
+				<tr>
+					<th>Entête 1</th>
+					<th>Entête 2</th>
+					<th>Entête 3</th>
+					<th>Entête 4</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<th>Pied 1</th>
+					<th>Pied 2</th>
+					<th>Pied 3</th>
+					<th>Pied 4</th>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td>Case 1</td>
+					<td>Case 2</td>
+					<td>Case 3</td>
+					<td>Case 4</td>
+				</tr>
+				<tr>
+					<td>Case 5</td>
+					<td>Case 6</td>
+					<td>Case 7</td>
+					<td>Case 8</td>
+				</tr>
+				<tr>
+					<td>Case 9</td>
+					<td>Case 10</td>
+					<td>Case 11</td>
+					<td>Case 12</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<form action="index.html" method="post" class="my-5">
+			<fieldset>
+				<legend>Mes coordonnées</legend>
+				<div class="form-group">
+					<label for="firstname">Prénom</label>
+					<div class="value"><input class="form-control" type="text" id="firstname"></div>
+				</div>
+				<div class="form-group">
+					<label for="lastname">Nom</label>
+					<div class="value"><input class="form-control" type="text" id="lastname"></div>
+				</div>
+				<div class="form-group">
+					<label for="email">Email</label>
+					<div class="value"><input class="form-control" type="email" id="email"></div>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Ma demande</legend>
+				<div class="form-group">
+					<select class="form-control" name="object">
+						<option value="0">Choisir l'objet de ma demande...</option>
+						<option value="q">Question d'ordre général</option>
+						<option value="g">Déclarer un bug gênant</option>
+						<option value="b">Déclarer un bug bloquant</option>
+					</select>
+				</div>
+				<textarea class="form-control" name="query" id="query"></textarea>
+			</fieldset>
+			<div class="navbar">
+				<button type="submit" class="btn btn-primary">Valider le formulaire</button>
+			</div>
+		</form>
+
+	</main>
+
+	<footer class="container-fluid text-center p-3 bg-dark text-white">
+		<p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png"></a></p>
+		<p>Ce matériel pédagogique est la propriété de la <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par Stephane Pereck.</p>
+	</footer>
+
+</body>
+
+</html>

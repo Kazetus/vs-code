@@ -1,0 +1,20 @@
+:root{
+    --text-color:#444;
+    --button-bg-color: #DD5735;
+    --text-font: arial;
+    --title-size: 2rem;
+}
+article a {
+    padding: 0.5em;
+    background-color: var(--button-bg-color);
+    font-family: var(--text-font);
+    color: white;
+    text-decoration: none;
+}
+h2 {
+    font-size: var(--title-size);
+}
+article {
+    color: --text-color;
+    font-family: var(--text-font);
+}

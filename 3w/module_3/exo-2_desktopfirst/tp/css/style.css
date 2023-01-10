@@ -1,0 +1,40 @@
+.container {
+    max-width: 90%;
+}
+/*.column {
+    column-count: 4;
+    column-gap: 0;
+    column-fill: balance;
+}*/
+.flex {
+    display: flex;
+}
+h2 {
+    background-color: rgba(0,0,0,0.2);
+    margin: 0;
+}
+main {
+    padding: 0 2em;
+}
+h3 {
+    margin: 0;
+}
+@media screen and (min-width: 780px) and (max-width: 1200px) {
+/*    .column {
+        column-count: 2;
+    }*/
+    .flex {
+        flex-wrap: wrap;
+    }
+    .flex article{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 780px) {
+/*    .column {
+        column-count: 1;
+    }*/
+    .flex {
+        flex-direction: column;
+    }
+}

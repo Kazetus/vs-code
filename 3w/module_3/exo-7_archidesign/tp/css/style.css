@@ -1,0 +1,292 @@
+/* *****************************************************************
+TOOLS
+***************************************************************** */
+
+* {
+	box-sizing: border-box; /* On spécifie que la largeur (width) de chaque boîte comprend le padding et la bordure (par défaut, c'est seulement la largeur du contenu) */
+}
+
+html {
+	font-size: 62.5%; /* 1rem = 10px (la formule est 10/16*100) la taille par défaut étant 16px */
+}
+
+body {
+	font-size: 1.8rem; /* on remets la taille du texte par défaut pour le body à 16px en utilisant les rem comme unité) */
+    font-family: 'Nunito', sans-serif;
+    background-color: #e3e3e3;
+    color: #414141;
+}
+h1, h2, nav {
+    font-family: 'Fjalla One', sans-serif;
+}
+h1, h2 {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+img {
+    max-width: 100%;
+}
+/* *****************************************************************
+Classes
+***************************************************************** */
+.container {
+    max-width: 1500px;
+    margin: auto;
+}
+.headfoot {
+    font-size: 2rem;
+    background-color: #00748D;
+    color: #fff;
+    text-align: center;
+    padding: 2em 1em;
+    background-image: url(../images/path.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+}
+.footer3w {
+    padding: 2em;
+	text-align: center;
+	color: #fff;
+	background-color: #444;
+}
+.footer3w img {
+    width: 60px;
+}
+.headbut {
+    padding: 0.5em;
+    text-decoration: none;
+    margin: 0.5em 0;
+}
+.headbut:hover, .en-cours {
+    background-color: #fff;
+    color: #00748D;
+}
+.button {
+    background-color: #00748D;
+    padding: 0.5em 1em;
+    text-decoration: none;
+
+    display: inline-block;
+}
+.background {
+    background-image: url("../images/bg-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10em 2em;
+}
+.phead {
+    margin: 1em auto;
+    padding: 0.5em;
+    text-align: center;
+    color: #00748D;
+    background-color: #fff;
+    font-weight: Bold;
+}
+.maintitle {
+    color: #fff;
+    background-color: #CB8606;
+    padding: 0.5em;
+    margin: 1em auto;
+}
+.subtitle {
+    margin: 0 0 3em;
+}
+.subti {
+    margin: 0;
+}
+.scroll {
+    overflow: scroll;
+    max-height: 350px;
+    overflow-x: hidden;
+}
+.flexw {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.left {
+    float: left;
+    margin-right: 1em;
+}
+.italic {
+    font-style: Italic;
+    color: #00748D;
+    margin-left: 1em;
+    font-size: 1.4rem;
+}
+.italic::after {
+    content: "";
+    width: 50%;
+    margin: 1em auto;
+    border-bottom: 1px solid #CB8606;
+    clear: both;
+    display: block;
+}
+.logooran {
+    color: #fff;
+    background-color: #CB8606;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+}
+.center {
+    text-align: center;
+}
+.mid {
+    width: 100%;
+    margin: auto;
+}
+.blueborder {
+    border: 1px solid #00748D;
+    margin: 1em;
+}
+.flexmain {
+    margin: auto;
+    width: 90%;
+}
+.flexnav {
+    list-style: none;
+}
+/* *****************************************************************
+balises
+***************************************************************** */
+h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #CB8606;
+    margin: 2em 0;
+}
+h2 {
+    font-size: 2rem;
+    color: #00748D;
+}
+.tiret::before, .tiret::after{
+    content: " - ";
+    color: #00748D;
+}
+h2::before, h2::after {
+    content: " - ";
+    color: #CB8606;
+}
+article {
+    margin: 3em 0;
+    display: inline-block;
+}
+ul {
+    list-style-image: url("../images/circle.png");
+}
+li p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+aside {
+    font-size: 1.6rem;
+}
+i {
+    margin-top: 1em;
+}
+.center p {
+    text-align: justify;
+}
+@media screen and (min-width: 630px) {
+    .flexnav {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+@media screen and (min-width: 780px) {
+    .flexfoot {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-direction: row-reverse;
+    }
+    .flexlogob {
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+    .flexside {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .artside {
+        width: 50%;
+    }
+    .flexmain {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .center {
+        width: 45%;
+        margin: 1em;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .flexhead {
+        display: flex;
+        justify-content: space-between;
+    }
+    .flexlogo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+    .flexside {
+        flex-direction: column;
+        width: 29%;
+        margin-top: 2em;
+    }
+    .mainflex {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    section {
+        width: 67%;
+    }
+    .flex {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .flex > div {
+        width: 50%;
+    }
+    .flexnav {
+        width: 40%;
+    }
+    .align {
+     margin-top: 0; 
+     margin-left: 1em;
+    }
+    ul {
+        padding-left: 1em;
+    }
+    .button {
+        margin: 1em;
+    }
+    .subtitle {
+        margin: 0;
+    }
+    .artside {
+        width: 100%;
+    }
+    .scroll {
+        max-height: 450px;
+    }
+    .flexmain {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .maintitle, .phead {
+        width: max-content;
+    }
+}

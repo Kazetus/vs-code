@@ -12,13 +12,17 @@
     <header>
         <div class="flex">
             <p class="maintitle"><a href="#"><span class="t">T</span>inker</a></p>
-            <ul class="flex navmenu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact us</a></li>
-            </ul>
+            <nav>                
+                <label for="burger"><i class="fa-solid fa-bars"></i></label>
+                <input class="disabled burger" type="checkbox" name="burger" id="burger">
+                <ul class="flex navmenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </nav>
         </div>
         <div class="headtext">
             <h1>Awesome <span class="html">html5</span> template <span class="tinker">tinker</span></h1>
@@ -26,31 +30,35 @@
             <div class="button"><a href="#">Let's start</a></div>
         </div>
     </header>
+    <div class="back"></div>
     <main>
         <div class="about">
             <div class="card">
+                <div class="icon"><img src="img/service_icon_01.png" alt="icon bell"></div>
                 <h2>Smart Alerts Updated</h2>
                 <p>Integer hendrerit vehicula mauris, sed pellentesque sem facilisis at. Aliquam vel arcu metus. Nam sem lectus, mattis non tellus et, tincidunt condimentum eros.</p>
-                <div class="buttonread">
-                    <p>Continue reading</p>
-                </div>
+                <div class="buttonread">Continue reading</div>
+            </div>
+            <div class="card">
+                <div class="icon"><img src="img/service_icon_02.png" alt="icon heart"></div>
                 <h2>Lovely HTML5 Layout</h2>
                 <p>Integer hendrerit vehicula mauris, sed pellentesque sem facilisis at. Aliquam vel arcu metus. Nam sem lectus, mattis non tellus et, tincidunt condimentum eros.</p>
-                <div class="buttonread">
-                    <p>Continue reading</p>
-                </div>
+                <div class="buttonread">Continue reading</div>
+            </div>
+            <div class="card">
+                <div class="icon"><img src="img/service_icon_03.png" alt="icon clock"></div>
                 <h2>Always CSS Ready</h2>
                 <p>Integer hendrerit vehicula mauris, sed pellentesque sem facilisis at. Aliquam vel arcu metus. Nam sem lectus, mattis non tellus et, tincidunt condimentum eros.</p>
-                <div class="buttonread">
-                    <p>Continue reading</p>
-                </div>
+                <div class="buttonread">Continue reading</div>
+            </div>
+            <div class="card">
+                <div class="icon"><img src="img/service_icon_04.png" alt="icon gear"></div>
                 <h2>One-Click Install</h2>
                 <p>Integer hendrerit vehicula mauris, sed pellentesque sem facilisis at. Aliquam vel arcu metus. Nam sem lectus, mattis non tellus et, tincidunt condimentum eros.</p>
-                <div class="buttonread">
-                    <p>Continue reading</p>
-                </div>
+                <div class="buttonread">Continue reading</div>
             </div>
         </div>
+        <div class="bg"></div>
         <div class="portfolio">
             <div class="gallerymenu">
                 <h2>Our gallery</h2>

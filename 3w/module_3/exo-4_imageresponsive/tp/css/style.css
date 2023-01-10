@@ -1,0 +1,33 @@
+
+
+img {
+    max-width: 100%;
+}
+
+
+
+
+.container {
+    max-width: 70%;
+}
+.background {
+    background-image: url(../ressources/phare.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    background: rgba(255,255,255,0.7);
+}
+.image {
+    width: 100%;
+    height: auto;
+}
+.large {
+    width: 45%;
+    margin: 2em 0;
+}
+figcaption {
+    margin-top: 2em;
+}

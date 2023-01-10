@@ -1,0 +1,31 @@
+p span {
+    display: inline-block;
+    width: 79px;
+    height: 79px;
+    background-image: url("../ressources/flags.jpg");
+    background-size: 300%;
+}
+article {
+    margin: 1em 0;
+}
+.flag-es {
+    background-position: center;
+}
+.flag-fr{
+    background-position: top right;
+}
+.flag-it{
+    background-position: bottom left;
+}
+.animation{
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    background-image: url('../ressources/dragon.png');
+}
+.animation:hover{
+    animation:  1s steps(4) infinite breathFire;
+}
+@keyframes breathFire {
+    100% { background-position-x: -1200px;}
+}
