@@ -15,3 +15,22 @@ var monTableau3 = ["toto", "tati", "tati"];
 console.table(monTableau);
 console.table(monTableau2);
 console.table(monTableau3);
+
+var a = 42; 
+var b = 4.2; 
+var c = -42; 
+var d = "42";
+alert( "Ma variable a est de type : " + typeof a + 
+"\nma variable b est de type : " + typeof b + 
+"\nma variable c est de type : " + typeof c + 
+"\nma variable d est de type : " + typeof d +
+"\nma variable monTableau est de type : " + typeof monTableau + 
+"\nma variable monTableau2 est de type : " + typeof monTableau2 + 
+"\nma variable monTableau3 est de type : " + typeof monTableau3 );
+
+var n = null;
+var u ;
+var nn = NaN;
+alert( "Ma variable n est de type : " + typeof n + 
+"\nma variable u est de type : " + typeof u + 
+"\nma variable nn est de type : " + typeof nn );
