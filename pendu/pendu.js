@@ -1,4 +1,4 @@
-let solution = window.prompt("saississez un mot a deviner");
+let solution = window.prompt("saississez un mot a deviner").toLowerCase();
 let input;
 let output = "";
 let indice;
@@ -154,7 +154,7 @@ function ajoute_lettre(input, indice) {
     }
 }
 function check_text() {
-    input = window.prompt("saississez une lettre");
+    input = window.prompt("saississez une lettre").toLowerCase();
     let boolLetter = false;
     for(let i = 0; i < solution.length; i++) {
         if(solution[i] == input) {
