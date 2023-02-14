@@ -34,3 +34,18 @@ var nn = NaN;
 alert( "Ma variable n est de type : " + typeof n + 
 "\nma variable u est de type : " + typeof u + 
 "\nma variable nn est de type : " + typeof nn );
+
+var x = 32;
+var y = 5;
+var z = 2;
+alert(y)
+y += z //équivaut y = y + z
+alert(y) //renvoi 7
+y *= z //équivaut y = y * z
+alert(y) //renvoi 14
+y -= z //équivaut y = y - z
+alert(y) //renvoi 12
+y /= z //équivaut y = y / z
+alert(y) //renvoi 6
+y %= z //équivaut y = y % z
+alert(y) //renvoi 0

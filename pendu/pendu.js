@@ -1,9 +1,11 @@
 let solution = window.prompt("saississez un mot a deviner").toLowerCase();
 let input;
 let output = "";
+let wrong = "";
 let indice;
 let count=0;
-let text = document.querySelector("p");
+let text = document.getElementById("word");
+let textw = document.getElementById("wrong")
 let btn = document.querySelector("button");
 let draw = document.querySelector("canvas");
 let context = draw.getContext("2d");
@@ -164,7 +166,18 @@ function check_text() {
         }
     }
     if(!boolLetter){
+        if (wrong.length > 0) {
+            for (let i = 0; i < wrong.length; i++) {
+                if (wrong[i] != input) {
+                    wrong += (input);
+                }
+            }
+        }
+        else {
+            wrong += input;
+        }
         next_draw();
+        textw.innerHTML = wrong;
     }
     plot_text(output);
     if(count > 10){
