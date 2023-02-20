@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+button {
+    width: 80px;
+    height: 80px;
+    margin: 1em;
+    box-shadow: #0c0c0c 5px 5px 5px;
+    font-size: 25px;
+    cursor: pointer;
+}
+button:active {
+    box-shadow: #0c0c0c 2px 2px 5px;
+}
+button:hover {
+    color: white;
+}
+#ciseaux {
+    background-color: #10aded;
+}
+#pierre {
+    background-color: #ed1010;
+}
+#feuille {
+    background-color: #60ff51;
+}
+#ciseaux:hover {
+    background-color: #0d6b91;
+}
+#pierre:hover {
+    background-color: #880d0d;
+}
+#feuille:hover {
+    background-color: #36942d;
+}
+.green {
+    color:#4ad63e;
+}
+.red {
+    color: #d41515;
+}
+.blue {
+    color: #159bcf;
+}
