@@ -86,21 +86,23 @@ alert(y) //renvoi 0
 OR | \|\| | Lorsqu’il est utilisé avec des valeurs booléennes, renvoie true si au moins l’une des comparaisons est évaluée à true ou false sinon |
 NO | ! | Renvoie false si une comparaison est évaluée à true ou renvoie true dans le cas contraire |
 
-## Methode d'utilisation de tableau
-| .push(x); | [1, 2, 3, x] | ajoute la valeur indiqué à la fin du tableau
-| .pop(); | [1, 2] | retire la dernière valeur
-| .shift(); | [2, 3] | retire la première valeur
-| .unshift(0); | [0, 1, 2, 3] | ajoute la valeur indiqué au début du tableau
-| .concat("d"); | | fusionne des tableaux sans changer les valeurs du tableau initial
-| .join('-'); |  a-b-c  | joindre les valeurs du tableau sans changer les valeurs du tableau initial
-| .slice(1); |  ["b", "c"] | retire le nombre d'éléments indiqué du tableau en partant du début sans changer les valeurs du tableau initial
-| .slice(-1); |  ["b", "c"] | retire le nombre d'éléments indiqué du tableau en partant du début et en comptant depuis la fin sans changer les valeurs du tableau initial
-| .includes("c"); | | true vérifie si la valeur existe
-| .indexOf("c"); | 2 | renvoi le position (index) de la valeur dans le tableau
-| .reduce((acc, cou)=> acc + cou ) | 6 | additionne tous les éléments du tableau
-| .findIndex(el => el > 2) | 2  | renvoie l'index du premier élément trouvé dans le tableau qui respecte la condition
-| .map(el => el * 2); | [2, 4, 6] | crée un nouveau tableau avec les résultats de l'appel d'une fonction fournie sur chaque élément du tableau appelant.
-| .some(el => el > 2); | true | passe le test implémenté par la fonction fournie. Elle renvoie un booléen indiquant le résultat du test.
-| .filter(el => el > 1) |  [2,3]  | renvoi tous les éléments qui respectent la condition
-| .every(el => el > 1); |
-| .reverse(); |
+## Méthode d'utilisation de tableau
+| Méthode | entrée | sortie | description |
+|---------|--------|---------|------------|
+| .push(x); | [1, 2, 3] | [1, 2, 3, x] | ajoute la valeur indiqué à la fin du tableau |
+| .pop(); | [1, 2, 3] | [1, 2] | retire la dernière valeur |
+| .shift(); | [1, 2, 3] | [2, 3] | retire la première valeur |
+| .unshift(0); | [1, 2, 3] | [0, 1, 2, 3] | ajoute la valeur indiqué au début du tableau |
+| .concat("d"); | [1, 2, 3] | [1, 2, 3] et [1, 2, 3, "d"] | fusionne des tableaux sans changer les valeurs du tableau initial |
+| .join('-'); | ["a", "b", "c"] | a-b-c  | joindre les valeurs du tableau sans changer les valeurs du tableau initial |
+| .slice(1); | ["a", "b", "c"] | ["b", "c"] | retire le nombre d'éléments indiqué du tableau en partant du début sans changer les valeurs du tableau initial |
+| .slice(-1); | ["a", "b", "c"] | ["b", "c"] | retire le nombre d'éléments indiqué du tableau en partant du début et en comptant depuis la fin sans changer les valeurs du tableau initial |
+| .includes("c"); | ["a", "b", "c"] | true | true vérifie si la valeur existe |
+| .indexOf("c"); | ["a", "b", "c"] | 2 | renvoi le position (index) de la valeur dans le tableau |
+| .reduce((acc, cou)=> acc + cou ) | [1, 2, 3] | 6 | additionne tous les éléments du tableau |
+| .findIndex(el => el > 2) | [1, 2, 3] | 2  | renvoie l'index du premier élément trouvé dans le tableau qui respecte la condition |
+| .map(el => el * 2); | [1, 2, 3] | [2, 4, 6] | crée un nouveau tableau avec les résultats de l'appel d'une fonction fournie sur chaque élément du tableau appelant. |
+| .some(el => el > 2); | [1, 2, 3] | true | passe le test implémenté par la fonction fournie. Elle renvoie un booléen indiquant le résultat du test. |
+| .filter(el => el > 1) | [1, 2, 3] |  [2,3]  | renvoi tous les éléments qui respectent la condition |
+| .every(el => el > 1); | [1, 2, 3] | false | Vérifie si tous les éléments du tableau respecte la condition |
+| .reverse(); | [1, 2, 3] | [3, 2, 1] | Renvoie le tableau en inversant les éléments internes |
