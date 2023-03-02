@@ -21,3 +21,5 @@ function logger() {
     console.log(this.getAttribute('id'));
 }
 arrFruit.map(el => el.addEventListener('click', logger));
+
+

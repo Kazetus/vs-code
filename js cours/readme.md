@@ -88,7 +88,7 @@ NO | ! | Renvoie false si une comparaison est évaluée à true ou renvoie true 
 
 ## Méthode d'utilisation de tableau
 | Méthode | entrée | sortie | description |
-|---------|--------|---------|------------|
+|:-------:|:------:|:-------:|:----------:|
 | .push(x); | [1, 2, 3] | [1, 2, 3, x] | ajoute la valeur indiqué à la fin du tableau |
 | .pop(); | [1, 2, 3] | [1, 2] | retire la dernière valeur |
 | .shift(); | [1, 2, 3] | [2, 3] | retire la première valeur |
@@ -106,3 +106,14 @@ NO | ! | Renvoie false si une comparaison est évaluée à true ou renvoie true 
 | .filter(el => el > 1) | [1, 2, 3] |  [2,3]  | renvoi tous les éléments qui respectent la condition |
 | .every(el => el > 1); | [1, 2, 3] | false | Vérifie si tous les éléments du tableau respecte la condition |
 | .reverse(); | [1, 2, 3] | [3, 2, 1] | Renvoie le tableau en inversant les éléments internes |
+
+
+## push vs spread operator
+Le push() va ajouter le contenu entre les parenthèses à la fin du tableau. Si le contenu est un tableau, il sera ajouté en entier comme un seul élément du tableau.
+Le ... (spread operator) va faire copie indépendante de la variable qui suivra, il découpera le contenu de la variable pour ajouter chaque élément/caratère(si string) comme un nouvel élément du tableau.
+Exemple :
+| Variable 1 | Méthode de copie | opération | résultat |
+|:----------:|:----------------:|:---------:|:--------:|
+|let array1=[1,2,3]|let array2=array1|array2.push(4)|array1 =[1,2,3,4] et array2=[1,2,3,4]|
+|let array1=[1,2,3]|let array2=...array1|array2.push(4)|array1 = [1,2,3] et array2 =[1,2,3,4]|
+let array=['a','b','c']|let text='def'|let array2=[...array,...text]|array2=['a','b','c','d','e','f']|

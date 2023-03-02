@@ -4,7 +4,13 @@
     box-sizing: border-box;
 }
 
-body { font-family: monospace;}
+body { 
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 h1 { text-align: center;}
 
 .cell {

@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box {
+    min-height: 100vh;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.box1 {
+    background: rgb(73, 108, 211);
+}
+.box2 {
+    background: rgb(24, 225, 38);
+}
+.book {
+    height: 600px;
+    width: 600px;
+    position: fixed;
+    top: calc(50% - 300px);
+    left: -300px;
+    /* transform: translate(-50%, -50%); */
+    /* clip-path: polygon(100% 7%, 39% 35%, 100% 76%, 61% 35%, 41% 100%, 67% 54%, 0 60%, 49% 68%, 28% 0, 32% 56%); */
+    clip-path: polygon(98% 78%, 61% 35%, 41% 100%, 68% 57%, 0 57%, 50% 70%, 29% 0, 32% 57%, 94% 8%, 39% 35%);
+}
+.book1 {
+    background: firebrick;   
+}
+.book2 {
+    background: gold;   
+}
