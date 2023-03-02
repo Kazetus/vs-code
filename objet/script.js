@@ -26,4 +26,4 @@ for(mario in maCollection) {
     div.innerHTML=`<p>Titre : ${maCollection[mario].titre}<p> </p>Année : ${maCollection[mario].annee}<p> </p>Console : ${maCollection[mario].console}<p>`;
     document.querySelector('body').appendChild(div);
 }
-// Grace à la méthode pour chaque chaque de maCollection créer une div qui aura comme h2, le nom de la console, en h3 le nom du jeu et en h4 l'année.
+// Grace à la méthode map pour chaque chaque de maCollection créer une div qui aura comme h2, le nom de la console, en h3 le nom du jeu et en h4 l'année.
