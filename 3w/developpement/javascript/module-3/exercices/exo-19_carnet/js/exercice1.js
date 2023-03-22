@@ -73,9 +73,11 @@ function detailContact(){
     indice = this.getAttribute('data-codecontact');
     for (let k=0;k<carnet.length;k++) {
         if (indice==carnet[k][4]) {
-                $('#contact').append("<p>"+carnet[k][0]+" "+carnet[k][1]+" "+carnet[k][2]+" "+carnet[k][3]+"</p>");
-                $('#contact').append("<p><a href=\"#contact\" id=\"modify\">Modifier le contact</a>"+"    "+"<a href=\"#contact\" id=\"delete\">Supprimer le contact</a></p>");
-                idcontact = k;
+            $('#contact').append("<p>"+carnet[k][0]+" "+carnet[k][1]+" "+carnet[k][2]+" "+carnet[k][3]+"</p>");
+
+            $('#contact').append("<p><a href=\"#contact\" id=\"modify\">Modifier le contact</a>"+"    "+"<a href=\"#contact\" id=\"delete\">Supprimer le contact</a></p>");
+            
+            idcontact = k;
         }
         else {}
     }

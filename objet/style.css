@@ -7,13 +7,22 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    background-color: #fafafa;
 }
 .game {
-    width: 21%;
     margin: 2em 0;
+    width: 21%;
+    height: 400px; 
+    text-align: center;
+    padding: 2em;
+    color: #fafafa;
+    text-shadow: 0 0 5px #000000, 0 0 5px #000000, 0 0 5px #000000, 0 0 5px #000000, 0 0 5px #000000, 0 0 5px #000000, 0 0 5px #000000, 0 0 5px #000000;
 }
-.game p:first-child {
-    font-size: 25px;
-    font-weight: 700;
-    text-decoration: underline;
+.gamehover {
+    margin: 2em 0;
+    width: 21%;
+    height: 400px; 
+    padding: 2em;
+    color : "rgb(0, 0, 0)";
+    text-shadow : "none";
 }
