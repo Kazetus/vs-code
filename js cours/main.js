@@ -49,3 +49,27 @@ y /= z //équivaut y = y / z
 alert(y) //renvoi 6
 y %= z //équivaut y = y % z
 alert(y) //renvoi 0
+
+
+
+
+
+// On veut la somme des deux dernières entrées du tableau.
+let monArray = [0,1,2,3]
+let somme = monArray[2] + monArray[3];
+console.log(somme);
+
+// Faire une suite de Fibonacci sur un tableau jusqu'à ce que la 
+// dernière valeur soit la plus proche de 50 sans dépasser 50.
+
+
+let fibo = [0,1,1]
+
+// while((fibo[fibo.length-1] + fibo[fibo.length-2]) < 50) {
+//     fibo.push(fibo[fibo.length-1] + fibo[fibo.length-2])
+// }
+
+for(let i = 2; (fibo[i] + fibo[i - 1]) < 50; i++) {
+        fibo.push(fibo[i] + fibo[i - 1])
+}
+console.log(fibo);
