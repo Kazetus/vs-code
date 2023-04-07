@@ -3,15 +3,17 @@ const app = express();
 const port = 8080;
 
 app.use(express.static('public'));
+app.set('views', './IHM');
+app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-    res.status(200).sendFile('/IHM/index.html', {root:__dirname});
+    res.status(200).render('index');
 })
 app.get('/a-propos', (req, res) => {
-    res.status(200).sendFile('/IHM/apropos.html', {root:__dirname});
+    res.status(200).render('apropos');
 })
 app.use((req, res) => {
-    res.status(404).sendFile('/IHM/404.html', {root:__dirname});
+    res.status(404).render('404');
 })
 
 app.listen(port, () =>{
