@@ -1,4 +1,1 @@
-*.txt
-vs-code/yoshi/
-!vs-code/yoshi/oeuf
-!yoshi/*.txt
+/node_modules
