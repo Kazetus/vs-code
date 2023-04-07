@@ -7,15 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1>Mon Application TodoList</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">A propos</a></li>
-            </ul>
-        </nav>
-    </header>
+    <%- include('./component/header') %>
     <section>
         <form action="">
             <label for="Title"></label>
@@ -28,6 +20,12 @@
     </section>
     <section>
         <h2>Liste des tâches :</h2>
+        <% tache.map((el) => { %>
+            <div>
+            <h3><%= el.titre %></h3>
+            <p><%= el.description %></p>
+            </div>
+        <% }); %>
     </section>
 </body>
 </html>
