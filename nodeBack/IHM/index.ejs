@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Index</title>
 </head>
 <body>
     <%- include('./component/header') %>
     <section>
-        <form action="">
-            <label for="Title"></label>
-            <input type="text" id="Title" name="Title">
+        <form action="/send" method="POST">
+            <input type="hidden" name="id" id="id">
+            <label for="title"></label>
+            <input type="text" id="title" name="title">
             <label for="description">Description de la tâche</label>
             <textarea name="description" id="description" cols="30" rows="10"></textarea>
             <input type="submit" value="Enregistrer">
@@ -24,8 +25,77 @@
             <div>
             <h3><%= el.titre %></h3>
             <p><%= el.description %></p>
+            <input type="button" value="modifier" onclick='putData("<%= el.id %>", "<%= el.titre %>", "<%= el.description %>")'>
+            <input type="button" value ="supprimer" onclick="popUpValidation('<%= el.id %>')">
             </div>
         <% }); %>
     </section>
 </body>
+<script>
+    function putData(id, title, description) {
+        document.getElementById('id').value = id;
+        document.getElementById('title').value = title;
+        document.getElementById('description').value = description;
+    }
+    function deleteData(id) {
+        let endPoint = '/send/'+ id;
+        fetch(endPoint, {method : "DELETE"})
+        .then((response) => response.json())
+        .then((data) => window.location.href = data.routeRacine)
+        .catch((error) => console.error(error));
+    }
+    function randomNumber(max) {
+        return Math.floor(Math.random()*max);
+    }
+    function popUpValidation(id) {
+        let popup = document.createElement('div');
+        popup.style.width = "100vw";
+        popup.style.height = "100vh";
+        popup.style.position = "absolute";
+        popup.style.top = '0';
+        popup.style.left = '0';
+        popup.id = "pop";
+        let content = document.createElement('div');
+        content.style.position = 'relative';
+        content.style.top = 'calc(50% - 100px)';
+        content.style.left = 'calc(50% - 300px)';
+        content.style.width = '600px',
+        content.style.height = '200px';
+        content.style.background = '#fafafa';
+        content.style.fontSize = '20px';
+        content.style.padding = '1em';
+        popup.appendChild(content);
+        let buttonV = document.createElement('button');
+        buttonV.addEventListener('click', () => {
+            deleteData(id);
+        });
+        buttonV.style.background = 'firebrick';
+        buttonV.style.padding = '1em';
+        buttonV.innerHTML = "Oui";
+        buttonV.style.position = 'relative';
+        buttonV.style.bottom = '-90px';
+        buttonV.style.left = '10px';
+        buttonV.style.cursor = 'not-allowed';
+        content.innerHTML = '<p>Voulez-vous vraiment supprimer cet élément de la liste ? </p>';
+        content.appendChild(buttonV);
+        let buttonA = document.createElement('button');
+        buttonA.addEventListener('click', () => {
+            document.body.removeChild(popup);
+        });
+        buttonA.style.position = 'relative';
+        buttonA.style.bottom = '-90px';
+        buttonA.style.right = '-490px';
+        buttonA.style.padding = '1em';
+        buttonA.innerHTML = "Non";
+        content.appendChild(buttonA);
+        document.body.appendChild(popup);
+        let back = setInterval(() => {
+            popup.style.background = `rgb(${randomNumber(256)},${randomNumber(256)},${randomNumber(256)})`;
+        }, 100);
+        let move = setInterval(() => {
+            content.style.top = `${randomNumber(1024)}px`;
+            content.style.left = `${randomNumber(1900)}px`;
+        }, 1000)
+    }
+</script>
 </html>
