@@ -5,14 +5,14 @@ const {
 const path = (app) => {
     
     app.get('/produit', (req, res) => {
-        connection.query('SELECT * FROM produit;', [], (error, results) => {
+        connection.query('SELECT intitule, fournisseur, fabriquant, prix_HT, categorie FROM produit p INNER JOIN categorie c ON c.id_categorie = p.id_categorie;', [], (error, results) => {
             if (error) throw error;
             res.json(results);
         });
     });
     app.get('/produit/:id', (req, res) => {
         const id_produit = req.params.id
-        connection.query('SELECT * FROM produit WHERE id_produit = ?', [id_produit], (error, results) => {
+        connection.query('SELECT intitule, fournisseur, fabriquant, prix_HT, categorie FROM produit p INNER JOIN categorie c ON c.id_categorie = p.id_categorie WHERE id_produit = ?', [id_produit], (error, results) => {
             if (error) throw error;
             res.json(results);
         });
