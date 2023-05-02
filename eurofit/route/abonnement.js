@@ -34,7 +34,7 @@ const path = (app) => {
         
         connection.query(requeteSQL, [titre, tout_club, toutes_salles, tout_pays, reduc_complement, reduc_medecine, reduc_coach, tarif], (error) => {
             if (error) throw error;
-            res.status(204).send('abonnement ajouté.');
+            res.status(200).send('abonnement ajouté.');
         })
     });
     app.patch('/abonnement', (req, res) => {
@@ -61,7 +61,7 @@ const path = (app) => {
             requeteSQL += " WHERE id_abonnement = ?";
             connection.query(requeteSQL, [id_abonnement], (error) => {
                 if(error) throw error;
-                res.status(204).send('abonnement modifié avec SUCCES !');
+                res.status(200).send('abonnement modifié avec SUCCES !');
             });
         }
     });
@@ -73,7 +73,7 @@ const path = (app) => {
             requeteSQL = 'UPDATE abonnement SET titre = ?, tout_club = ?, toutes_salles = ?, tout_pays = ?, reduc_complement = ?, reduc_medecine = ?, reduc_coach = ?, tarif = ? WHERE id_abonnement = ?';
             connection.query(requeteSQL, [titre, tout_club, toutes_salles, tout_pays, reduc_complement, reduc_medecine, reduc_coach, tarif, id_abonnement], (error) => {
                 if(error) throw error;
-                res.status(204).send('abonnement modifié avec SUCCES');
+                res.status(200).send('abonnement modifié avec SUCCES');
             });
         }
     });
@@ -85,7 +85,7 @@ function checkValue(count, value) {
     return count;
 }
 function createRequete(count, key, value) {
-    if(value) {
+    if(value !==null && value !== undefined) {
         if(typeof value == 'string') {
             if (count > 0) {
                 
@@ -100,7 +100,6 @@ function createRequete(count, key, value) {
             return `${key} = ${value}`;
         }
     } else {
-        console.log("n'a pas validé");
         return "";
     }
 }
