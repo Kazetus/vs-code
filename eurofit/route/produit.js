@@ -17,6 +17,16 @@ const path = (app) => {
             res.json(results);
         });
     });
+    app.get('/produit/:colonne/:data', (req, res) => {
+        const colonne = req.params.colonne;
+        const data = req.params.data;
+        connection.query(`SELECT intitule, fournisseur, fabriquant, prix_HT, categorie FROM produit p INNER JOIN categorie c ON c.id_categorie = p.id_categorie WHERE ${colonne} LIKE "%${data}%"`,
+         [],
+         (error, results) => {
+            if (error) throw error;
+            res.json(results);
+        });
+    });
     app.delete('/produit/:id', (req, res) => {
         const id_produit = req.params.id;
         connection.query('DELETE FROM produit WHERE id_produit = ?', [id_produit], (err, results) => {

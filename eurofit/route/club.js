@@ -16,6 +16,16 @@ const path = (app) => {
             res.json(results);
         });
     });
+    app.get('/club/:colonne/:data', (req, res) => {
+        const colonne = req.params.colonne;
+        const data = req.params.data;
+        connection.query(`SELECT nom_club,mail,tel,superficie,contrat_assurance, nom_assurance, adresse, ville, quartier, code_postal, pays FROM club c INNER JOIN assurance a ON a.id_assurance = c.id_assurance INNER JOIN adresse ad ON ad.id_adresse = c.id_adresse INNER JOIN ville v ON v.id_ville = ad.id_adresse INNER JOIN code_postal cp ON cp.id_code_postal = ad.id_code_postal INNER JOIN pays p ON p.id_pays = ad.id_pays INNER JOIN quartier q ON q.id_quartier = ad.id_quartier WHERE ${colonne} LIKE "%${data}%"`,
+         [],
+         (error, results) => {
+            if (error) throw error;
+            res.json(results);
+        });
+    });
     app.delete('/club/:id', (req, res) => {
         const id_club = req.params.id;
         connection.query('DELETE FROM club WHERE id_club = ?', [id_club], (err, results) => {

@@ -17,6 +17,16 @@ const path = (app) => {
             res.json(results);
         });
     });
+    app.get('/abonnement/:colonne/:data', (req, res) => {
+        const colonne = req.params.colonne;
+        const data = req.params.data;
+        connection.query(`SELECT * FROM abonnement WHERE ${colonne} LIKE "%${data}%"`,
+         [],
+         (error, results) => {
+            if (error) throw error;
+            res.json(results);
+        });
+    });
     app.delete('/abonnement/:id', (req, res) => {
         const id_abonnement = req.params.id;
         connection.query('DELETE FROM abonnement WHERE id_abonnement = ?', [id_abonnement], (err, results) => {

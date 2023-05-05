@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section1{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: rgb(3, 3, 39);
+}
+.blob{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    place-items: center;
+    height: 400px;
+    width: 400px;
+}
+.blob svg{
+    height: 150%;
+    width: 150%;
+}
+.blob svg path{
+    transform: translate(100px, 100px);
+}
+@keyframes angelika {
+    from{transform: rotateY(0)}
+    to{transform: rotateY(360deg)}
+}
+@keyframes titre {
+    from{width: 0;}
+    to{width: 240px;}
+}
+@keyframes svgMoove {
+    0%{opacity: 1; stroke-dashoffset: 4000px; fill-opacity: 0;}
+    80%{opacity: 1; stroke-dashoffset: 0; fill-opacity: 0;}
+    100%{opacity: 1; stroke-dashoffset: 0; fill-opacity: 1;}
+}

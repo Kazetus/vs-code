@@ -19,10 +19,8 @@ const path = (app) => {
     app.get('/membres/:colonne/:data', (req, res) => {
         const colonne = req.params.colonne;
         const data = req.params.data;
-        console.log(data);
-        console.log('SELECT nom_membres, prenom_membres, m.tel, m.mail, adresse, ville, quartier, code_postal, pays, nom_club, titre, nom_medecin, prenom_medecin FROM membres m INNER JOIN adresse ad ON ad.id_adresse = m.id_adresse INNER JOIN ville v ON v.id_ville = ad.id_adresse INNER JOIN code_postal cp ON cp.id_code_postal = ad.id_code_postal INNER JOIN pays p ON p.id_pays = ad.id_pays INNER JOIN quartier q ON q.id_quartier = ad.id_quartier INNER JOIN club ON club.id_club = m.id_club  INNER JOIN medecin ON medecin.id_medecin = m.id_medecin INNER JOIN abonnement ON abonnement.id_abonnement = m.id_abonnement WHERE '+colonne+' LIKE "%'+data+'%"');
-        connection.query('SELECT nom_membres, prenom_membres, m.tel, m.mail, adresse, ville, quartier, code_postal, pays, nom_club, titre, nom_medecin, prenom_medecin FROM membres m INNER JOIN adresse ad ON ad.id_adresse = m.id_adresse INNER JOIN ville v ON v.id_ville = ad.id_adresse INNER JOIN code_postal cp ON cp.id_code_postal = ad.id_code_postal INNER JOIN pays p ON p.id_pays = ad.id_pays INNER JOIN quartier q ON q.id_quartier = ad.id_quartier INNER JOIN club ON club.id_club = m.id_club  INNER JOIN medecin ON medecin.id_medecin = m.id_medecin INNER JOIN abonnement ON abonnement.id_abonnement = m.id_abonnement WHERE ? LIKE "%?%"',
-         [colonne, data],
+        connection.query(`SELECT nom_membres, prenom_membres, m.tel, m.mail, adresse, ville, quartier, code_postal, pays, nom_club, titre, nom_medecin, prenom_medecin FROM membres m INNER JOIN adresse ad ON ad.id_adresse = m.id_adresse INNER JOIN ville v ON v.id_ville = ad.id_adresse INNER JOIN code_postal cp ON cp.id_code_postal = ad.id_code_postal INNER JOIN pays p ON p.id_pays = ad.id_pays INNER JOIN quartier q ON q.id_quartier = ad.id_quartier INNER JOIN club ON club.id_club = m.id_club  INNER JOIN medecin ON medecin.id_medecin = m.id_medecin INNER JOIN abonnement ab ON ab.id_abonnement = m.id_abonnement WHERE ${colonne} LIKE "%${data}%"`,
+         [],
          (error, results) => {
             if (error) throw error;
             res.json(results);
